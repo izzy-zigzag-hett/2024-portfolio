@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. | Motion Graphics</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/project.css">
+    <link href="./style/lightbox.css" rel="stylesheet" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="project.js"></script>
+    <script type="text/javascript" src="scripts/mograph.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+    <!-- CONFIG -->
+    <meta name="description" content="Home page for UIUX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+        
+        <div id="fadein"></div>
+        <a id="top_of_page"></a>
+        <div id="back_to_top">
+            <a href="#top_of_page">
+            <img src="images/arrow-up-bold-box-outline.svg">
+            </a>
+        </div>
+        <menu id="home_menu">
+            
+            <!-- <script>
+                function menu_home_popup() {
+                    var popup = document.getElementById("home_popup");
+                    popup.classList.toggle("show");
+                    console.log("popup")
+                }
+            </script>
+            <p class="home_popup" id="home_popup">Home</p> -->
+            <a href="index.html"><img id="menu_logo" src="./images/ih_logo_navy.svg"></a>
+            
+            <a href="mograph.html" class="menu_link"><div class="menubar bar bluebar">
+                <p class="menu_header">
+                    Motion Graphics
+                </p>
+            </div></a>
+            <a class="menu_link"><div class="menubar bar greenbar">
+                <p class="menu_header">
+                    Animation
+                </p>
+            </div></a>
+            <a class="menu_link"></a><div class="menubar bar yellowbar">
+                <p class="menu_header">
+                    Illustrative Design
+                </p>
+            </div></a>
+            <a class="menu_link"></a><div class="menubar bar pinkbar">
+                <p class="menu_header">
+                    About & Contact
+                </p>
+            </div></a>
+        </menu>
+        <content id="project_content"> 
+         <div id="non-nav-content">
+
+        
+        <header class="project_header">
+            <img id="logo_wiggley" src="./images/logo_rainbow_wiggling_3.gif">
+            <div class="header_text">
+                
+                
+                <h1 class="page_title">
+                    Motion Graphics
+                </h1>
+                <!-- <hr> -->
+                <br>
+                <p class="subtitle section_subtitle">
+                    From micro-interactions to templates and video projects, I can create a wide range of vector-based animations.
+                </p>
+            </div>
+            
+        </header>
+        
+        <!-- <hr class="divider"> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#flourish_button").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#HR_1").offset().top
+                    }, 2000);
+                });
+            });
+        </script> -->
+
+        <main>
+            <h1 class="section_title">Internships:</h1>
+            <section class="project_grid">
+                <div class="container yellow">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            Flourish (2023)
+                        </h2>
+                        <p class="project_desc">
+                           <b>Visual Design Internship</b>
+                        </p>
+                        <button id="flourish_button" onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" class="yellow-button">
+                        <!-- <button id="flourish_button" class="yellow-button"> -->
+
+                            View case study
+                        </button>
+                    </div>
+                    <div>
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
+                        <a href="project.html" >
+                            <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
+                            height: 15rem;" loop autoplay></dotlottie-player>
+                        </a>
+                        <!-- <a href="project.html"><img class="project_image" src="./images/redesign_cover.png" alt="Library Website Redesign Cover Image"></a> -->
+                    </div>
+                    
+    
+                </div>
+                <div class="container green">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            AOFund (2022)
+                        </h2>
+                        <p class="project_desc">
+                            <b>Animation Internship</b>
+                        </p>
+                        <button onclick="window.location.href='project.html';" class="green-button">
+                            View case study
+                        </button>
+                    </div>
+                    <div>
+                        <a href="index.html"><img class="project_image" src="./images/AOFund/aof_template_1.gif" alt="Looping gif with colorful animation"></a>
+                    </div>
+                </div>
+              
+                
+            </section>
+            <img class="animated_divider" src="./images/HR_1.gif" id="HR_1">
+            <h1 class="section_title">
+                Flourish (2023-24)
+                        </h1>
+            <section class="grid_section">
+                <div class="grid_text">
+                    <p class="subtitle section_subtitle">
+                        Visual Design Internship
+                    </p>
+                </div>
+                <div id="anim_mood_box">
+                    <div id="mood_preview_box">
+                        <img id="mood_preview_img" src="./images/Flourish/1_awesome_preview.png">
+                    </div>
+                    <div class="big_lottie" id="anim_mood_big">
+                    </div>
+                </div>
+                
+                <script>
+                        var curr=1;
+                        var anim_mood_big = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_big'),
+                            path: './images/Flourish/1_awesome_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Awesome",
+                        });
+                        // var mood_preview = bodymovin.loadAnimation({
+                        //     container: document.getElementById('anim_mood_big'),
+                        //     path: './images/Flourish/1_awesome_v1.json',
+                        //     renderer: 'svg',
+                        //     loop: true,
+                        //     autoplay: true,
+                        //     name: "Sunnie Reacts - Awesome",
+                        // });
+                        var mood_paths = [
+                            'images/Flourish/1_awesome_v1.json',
+                            'images/Flourish/2_good_v3.json',
+                            'images/Flourish/3_okay_v1.json',
+                            'images/Flourish/4_bad_v1_FINAL.json',
+                            'images/Flourish/5_terrible_v3.json'
+                        ];
+         
+                </script>
+                <div class="photo_grid five-wide">
+
+                    <div class="sunnie_reacts" id="anim_mood_1" onclick="change_cover(1)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_1'),
+                            path: './images/Flourish/1_awesome_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Awesome",
+                        });           
+                    </script>
+                    <div class="sunnie_reacts" id="anim_mood_2" onclick="change_cover(2)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_2'),
+                            path: './images/Flourish/2_good_v3.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Good",
+                        });           
+                    </script>
+                    <div class="sunnie_reacts" id="anim_mood_3" onclick="change_cover(3)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_3'),
+                            path: './images/Flourish/3_okay_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Okay",
+                        });           
+                    </script>
+                    <div class="sunnie_reacts" id="anim_mood_4" onclick="change_cover(4)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_4'),
+                            path: './images/Flourish/4_bad_v1_FINAL.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Bad",
+                        });           
+                    </script>
+                    <div class="sunnie_reacts" id="anim_mood_5" onclick="change_cover(5)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_5'),
+                            path: './images/Flourish/5_terrible_v3.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Terrible",
+                        });           
+                    </script>
+                </div>
+            </section>
+            <section id="p0" class="section blue figure_box">
+                
+                <div class="text_only">
+                    <h2>
+                        <!-- <p class="section_subtitle"> -->
+                        Visual Design Internship
+                        <!-- </p> -->
+                    </h2>
+                    <hr>
+                    <p class="subtitle">
+                        "Flourish" is a personal well-being app currently being developed.<br><br>
+
+                        During my time as a design and animation intern, I got a great look into the
+                        mobile app development world with practical projects creating assets that will be deployed
+                        in the actual app.
+
+                    </p> 
+                    <p class="subtitle">
+                        <h2>My biggest takeaways:</h2>
+                        <ul>
+                            <li class="nice_list">Prepping assets for mobile app/website deployment</li>
+                            <li class="nice_list">Working within visual design systems</li>
+                            <li class="nice_list">Creating many solutions before landing on the right one</li>
+                        </ul>
+
+                    </p> 
+                    
+                </div>
+                <!-- <div class="figure">
+                    
+                </div> -->
+                
+                
+            </section>
+            
+            <h1 class="section_title">
+                Process:
+            </h1>
+            <section id="p1">
+                <h2 class="section pink">
+                   Part 1: Sketching and Wireframing 
+                </h2>
+                <div>
+                    <div class="section pink">
+                        <h3>
+                            Pre-Design Thinking:  
+                            </h3>
+                            <div class="highlight">
+                                <p>
+                                We chose to re-design a mobile interface for <a href="https://www.ycombinator.com/companies/marathon-education">Marathon Education.</a>
+                                </p>
+                                <p>
+                                    Marathon Education provides live after-school tutoring and classes to K-12 students in Vietnam.
+                                    As such, when designing our prototype, we kept in mind the need to accommodate a wide range of ages and languages.
+                                </p>
+                            </div>
+                    </div>
+                    
+                    <div class="section pink">
+                        <h3>
+                            Sketching:
+                        </h3>
+                        <div class="highlight">
+                            <p>
+                                Each group member then brainstormed a different potential design for Marathon's app.
+                            </p>
+                            <div id="homeCarousel" class="carousel slide">
+
+                            <table>
+                                <tr>
+                                    <th>Member One</th>
+                                    <td class="sketches">
+                                        <img onclick="window.open('iterative_design/oren.png','_blank')" class="table_sketch" src="iterative_design/oren.png" id="orensketch" alt="Member one's preliminal sketches">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Member Two</th>
+                                    <td class="sketches">
+                                        <img onclick="window.open('iterative_design/izzy1.png','_blank')" class="table_sketch" src="iterative_design/izzy1.png" id="izzy1sketch" alt="Member two's preliminal sketches part one">
+                                        <img onclick="window.open('iterative_design/izzy2.png','_blank')" class="table_sketch" src="iterative_design/izzy2.png" id="izzy2sketch" alt="Member two's preliminal sketches part two">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Member Three</th>
+                                    <td class="sketches">
+                                        <img onclick="window.open('iterative_design/hadley1.png','_blank')" class="table_sketch" src="iterative_design/hadley1.png" id="hadley1sketch" alt="Member three's preliminal sketches part one">
+                                        <img onclick="window.open('iterative_design/hadley2.png','_blank')" class="table_sketch" src="iterative_design/hadley2.png" id="hadley2sketch" alt="Member three's preliminal sketches part two">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Member Four</th>
+                                    <td class="sketches">
+                                        <img onclick="window.open('iterative_design/maya1.png','_blank')" class="table_sketch" src="iterative_design/maya1.png" id="maya1sketch" alt="Member four's preliminal sketches part one">
+                                        <img onclick="window.open('iterative_design/maya2.png','_blank')" class="table_sketch" src="iterative_design/maya2.png" id="maya2sketch" alt="Member four's preliminal sketches part two">
+                                        <img onclick="window.open('iterative_design/maya3.png','_blank')" class="table_sketch" src="iterative_design/maya3.png" id="maya3sketch" alt="Member four's preliminal sketches part three">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="section pink">
+                        <h3>
+                            Combining Ideas into a Wireframe
+                        </h3>
+                        <div>
+                            
+                                <div class="figure_box">
+                                    <div class="figure">
+                                        <p class="figma_alt">(Figma will take a moment to load)</p>
+                                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFHjJXRLkxDudibX9cP4pse%2FIterative-Design-Wireframes---Marathon-Education%3Fnode-id%3D1%253A5%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A5" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="figure_text">
+                                       <h2>
+                                            Wireframe Prototype
+                                        </h2>
+                                        <hr>
+                                        <p class="subtitle">
+                                            This is a low-fidelity version of our final product meant to sketch out the architecture of our design.
+                                        </p>
+                
+                                    </div>
+                                </div>
+                                
+                                <img class="click_image" onclick="window.open('iterative_design/wireframeimg.png','_blank')" src="iterative_design/wireframeimg.png" id="wireframeimg" alt="An image of our Marathon wireframe, combining ideas from all members' preliminal sketches">
+                            
+                        </div>    
+                    
+                </div>
+            </section>
+
+            <section id="p2">
+                <h2 class="section yellow">
+                    Part 2: Mockups
+                </h2>
+                <div class="section yellow">
+                    <h3>
+                        Interactive High Fidelity Mockup  
+                    </h3>
+                    <div class="highlight">
+                        <div class="figure_box">
+                            <div class="figure">
+                                <p class="figma_alt">(Figma will take a moment to load)</p>
+                                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7gqkNIkHkhDJvqaCbxZgjh%2FPre-Feedback-Iterative-Design-Hi-Fi%3Fnode-id%3D1%253A5%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A5" allowfullscreen></iframe>
+                            </div>
+                            <div class="figure_text">
+                               <h2>
+                                    Version 1 Prototype <br> (before peer feedback)
+                                </h2>
+                                <hr>
+                                <p class="subtitle">
+                                    This was our first high fidelity prototype. It is similar to our final product, but fails in ways that the peer feedback sessions (described below) address.
+                                </p>
+        
+                            </div>
+                        </div>
+
+                        <img class="click_image" onclick="window.open('iterative_design/hi-fi_pre-feedback.png','_blank')" src="iterative_design/hi-fi_pre-feedback.png" id="hififlow" alt="A large image including all parts of our high fidelity mockup">
+                        <p>
+                            Note: This mockup includes the edits made after the critique feedback mentioned below.
+                        </p>
+                    </div>
+                </div>
+                <div class="section yellow">
+                   <h3>
+                        Mockup Studio Critique Feedback
+                    </h3>
+                    <div class="highlight">
+                        <p>
+                            During our studio critique session, we received feedback that helped us better develop our mockup.
+                            Here are a few critiques that were especially helpful:
+                        </p>
+                        <ul>
+                            <li>
+                                Include description of company on first sign up page
+                            </li>
+                            <li>
+                                Make the recommended courses more relevant/informed by the user sign up
+                            </li>
+                            <li>
+                                Include a username/password section of the sign up
+                            </li>
+                            <li>
+                                Simplify the home page (we previously had 2 "coming up classes" sections on the home page, as visible on wireframes)
+                            </li>
+                            <li>
+                                Edit the live "slow down" and "speed up" options, to make more clear if classes are recorded or live
+                            </li>
+                            <li>
+                                Search results should be clickable in their entirety
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="section yellow" style="display: flex; flex-direction:column; align-items:center;">
+                    <h3>
+                        Comparison of Versions Before and After Studio Critique
+                    </h3>
+                    
+                        <img class="click_image" onclick="window.open('iterative_design/beforeaftervid.png','_blank')" style="max-width: 75%;" src="iterative_design/beforeaftervid.png" id="baall" alt="A before and after critique comparison of the live classes">
+                        <br><img class="click_image" onclick="window.open('iterative_design/beforeafterall.png','_blank')" style="max-width: 85%;" src="iterative_design/beforeafterall.png" id="baall" alt="A general before and after critique comparison of the whole app">
+                    
+                </div>
+                
+            </section>
+
+            <section id="p3">
+                <h2 class="section green">
+                   Part 3: User Testing
+                </h2>
+                <div class="section green">
+                    <h3>
+                        Testing Instructions, Tasks, and Post-Task Questions
+                    </h3>
+                    <div class="highlight">
+                        <p> <strong>
+                            Our testers' instructions were:
+                        </strong> </p>
+                        <p>
+                            Imagine you’re a 6th grade student, seeking help in your Algebra studies. Sign up for Marathon Education and register for the 6th grade Algebra class. Once you’ve registered for this class, join the live session. Please think aloud as you are performing the tasks.
+                        </p>
+                        <p>
+                            You will be interacting with an interactive mockup, not an actual website. Not all buttons will work, but imagine that they would be functional in the final prototype. If at any point you are unsure of how to continue, press anywhere on the screen to see the available next steps highlighted in blue.
+                        </p>
+                        <p> <strong>
+                            Our testers' tasks were:
+                        </strong> </p>
+                        <ul>
+                            <li>
+                                Follow the first few pages to sign up for Marathon Education. You will know that you have completed this task successfully when you have reached the home page.
+                            </li>
+                            <li>
+                                Register for the 6th grade Algebra class. You will know that you have completed this task successfully when the 6th grade Algebra class appears in the ‘My Classes’ tab.
+                            </li>
+                            <li>
+                                Join the live session of the 6th grade Algebra class. You will know that you have completed this task successfully when you see a screen with math equations and student questions.
+                            </li>
+                        </ul>
+                        <p> <strong>
+                            Our testers' post-task questions were:
+                            <ul>
+                                <li>
+                                    What frustrated you most about this app?
+                                    <ol>
+                                        <li>
+                                            The colors, and design.
+                                        </li>
+                                        <li>
+                                            No frustration about the app.
+                                        </li>
+                                        <li>
+                                            The only thing that frustrated me was that 6th grade Algebra wasn't listed in the menu of choices.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    What did you like about this app?
+                                    <ol>
+                                        <li>
+                                            It was really easy to use, but it has an old vibe (the design i guess).
+                                        </li>
+                                        <li>
+                                            The simplicity made it easy to maneuver. The screen is not too busy.
+                                        </li>
+                                        <li>
+                                            I liked that it was easy to register, sign up and start a class.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    Do you think this app is accessible for a wide range of ages? What is the youngest age this app is appropriate for?
+                                    <ol>
+                                        <li>
+                                            Yes! I think like 8 would be the youngest age.
+                                        </li>
+                                        <li>
+                                            6th grade is a little on the young side, in my opinion. Due to kids getting distracted and needing to select the correct class.
+                                        </li>
+                                        <li>
+                                            I think that 6th grade and up would be the best choice for this app. And I think anyone older than that could easily use it. The youngest age I would think could use it well would be about 11 year olds.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    Any other comments?
+                                    <ol>
+                                        <li>
+                                            No.
+                                        </li>
+                                        <li>
+                                            No other comments about the app.
+                                        </li>
+                                        <li>
+                                            I admire you for trying have tools to teach math online. I think it would be pretty hard to do.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </strong> </p>
+                    </div>
+                </div>
+                <div class="section green">
+                    <h3>
+                        User Testing Videos
+                    </h3>
+                    <div class="highlight">
+                        <p>
+                            User 1
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kxwbqw7s35c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            User 2
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TzFeDMJThcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            User 3
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WduFhV5OsI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="section green">
+                    <h3>
+                        Analysis of Testing Results
+                    </h3>
+                    <div class="highlight">
+                        <p>
+                            All users who participated in our usertesting study were able to complete all tasks successfully without getting lost, managing to sign up for the app, register for a course, and join a live session. All users seemed to clearly understand the structure and flow of the app. These results were in line with our expectations, and we didn’t encounter any major surprises or problems with our testing. Users generally made small errors, such as navigating to the ‘wrong’ tab (i.e. going to the ‘My Classes’ tab before any classes were registered), and all of our users attempted to find their class in the ‘recommended’ section before going to the ‘explore’ tab and manually searching for their goal. One of the users was unsure if the app was designed for live sessions or pre-recorded lectures.
+                        </p>
+                        <p>
+                            The most critical piece of feedback we received was on our visual style; specifically, one user felt the visual design used outdated features (e.g. the tabs) and outdated styles (e.g. the dark blue color and font). Based on this response, we would potentially switch the top tabs with a more modern bottom menu (like on Snackpass or Instagram) and experiment with different color and font options. To do so we would conduct an analysis of design attributes and decisions found in the interfaces of similar successful services and implement these attributes into our own design.
+                        </p>
+                    </div>
+                </div>
+                
+            </section>
+                
+        </main>
+        </div>
+        <!-- <div id="left_side_bar">
+            <div id="menu_organizer">
+                <nav>
+                    <a href="#p1" class="nav_link">
+                        <h4>
+                            1. Flourish (2023)
+                        </h4>
+                    </a>
+                    <a href="#p2" class="nav_link"><h4>
+                        2. AOFund (2022)
+                    </h4></a>
+                    <a href="#p3" class="nav_link"><h4>
+                        3. Additional Mograph
+                    </h4></a>
+                
+                </nav> 
+            </div>
+                       
+        </div> -->
+    </content>
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    
+    </body>
+</html>

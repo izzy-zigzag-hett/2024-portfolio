@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. | Motion Graphics</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/project.css">
+    <link href="./style/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/carousel.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="project.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+    <!-- CONFIG -->
+    <meta name="description" content="Home page for UIUX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+<section>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <div class="sunnie_reacts" id="anim_mood_1"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_1'),
+                            path: './images/Flourish/1_awesome_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Awesome",
+                        });           
+                    </script>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1043/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Christian Joudrey</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1044/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Steve Carter</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1045/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1049/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Rosan Harmens</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1052/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Annie Spratt</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>

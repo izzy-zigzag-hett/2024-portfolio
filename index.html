@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. Portfolio | Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+    <!-- CONFIG -->
+    <meta name="description" content="Home page for UIUX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
+    
+</head>
+    <body>
+        
+        <menu id="home_menu">
+            <a href="index.html"><img id="menu_logo" src="./images/ih_logo_navy.svg"></a>
+            <a href="mograph.html" class="menu_link"><div class="menubar bar bluebar">
+                <p class="menu_header">
+                    Motion Graphics
+                </p>
+            </div></a>
+            <a class="menu_link"><div class="menubar bar greenbar">
+                <p class="menu_header">
+                    Animation
+                </p>
+            </div></a>
+            <a class="menu_link"></a><div class="menubar bar yellowbar">
+                <p class="menu_header">
+                    Illustrative Design
+                </p>
+            </div></a>
+            <a class="menu_link"></a><div class="menubar bar pinkbar">
+                <p class="menu_header">
+                    About & Contact
+                </p>
+            </div></a>
+        </menu>
+        
+        
+        
+        
+        <header class="home_header">
+            <div class="header_text">
+                
+                    
+                        
+                <div id="name_gif_box"><img src="./images/forwards_and_back_TRANS_4.gif" id="name_gif"></div>
+                
+                <h2 id="descriptor_line">
+                    Hi! I'm Izzy.<br>
+                    I am an animator, illustrator, and designer. 
+                </h2>
+                
+                <h1 id="hook">
+                    
+                    How can I help you create something amazing?
+                    <button id="contact-button">Contact me!</button>
+                </h1>
+            </div>
+            <!-- <div>
+                <img id="wave_gif"src="images/wave.gif">
+            </div> -->
+            
+            
+        </header>
+        
+        <!-- <div class="bar pinkbar"></div>
+        <div class="bar yellowbar"></div>
+        <div class="bar greenbar"></div>
+        <div class="bar bluebar"></div> -->
+        <h1 class="section_title">
+            My skills:
+        </h1>
+        <section class="project_grid">
+            <div class="container yellow">
+                <div class="project_text">
+                    <h2 class="project_title">
+                        Motion Graphics
+                    </h2>
+                    <p class="project_desc">
+                        A variety of subtle looping animations designed to catch your eye and guide it through any user experience.
+                    </p>
+                    <button onclick="window.location.href='mograph.html';" class="yellow-button">
+                        View MoGraph portfolio
+                    </button>
+                </div>
+                <div>
+                    
+
+                    <a href="mograph.html" >
+                        <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
+                        height: 15rem;" loop autoplay></dotlottie-player>
+                    </a>
+                    <!-- <a href="project.html"><img class="project_image" src="./images/redesign_cover.png" alt="Library Website Redesign Cover Image"></a> -->
+                </div>
+                
+
+            </div>
+            <div class="container green">
+                <div class="project_text">
+                    <h2 class="project_title">
+                        Creative Animation
+                    </h2>
+                    <p class="project_desc">
+                        Playful animations that center storytelling, created for the sake of enjoyment and satisfaction.
+                    </p>
+                    <button onclick="window.location.href='project.html';" class="green-button">
+                        View animation portfolio
+                    </button>
+                </div>
+                <div>
+                    <a href="index.html"><img class="project_image" src="./images/bluebird_skies_LR.gif" alt="Looping gif with colorful animation"></a>
+                </div>
+            </div>
+            <div class="container blue">
+                <div class="project_text">
+                    <h2 class="project_title">
+                        2d and 3d Asset Creation
+                    </h2>
+                    <p class="project_desc">
+                        Anything you need in the realm of graphic design and illustration, I can make it, including vector graphics, typographic layouts, and even 3d models.</p>
+                    <button onclick="window.location.href='project.html';" class="blue-button">
+                        View asset creation portfolio
+                    </button>
+                </div>
+                <div>
+                    <a href="project.html"><img class="project_image" src="./images/iterative_cover.png" alt="Iterative App Design"></a>
+                </div>
+            </div>
+            
+        </section>
+        <footer>
+            Copyright Izzy Hettmansperger 2024
+        </footer>
+        <div id="fadein"></div>
+    </body>
+</html>
