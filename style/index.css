@@ -68,8 +68,8 @@ p {
 button {
     font-weight: bold;
     font-size: medium;
-    background: rgb(209, 138, 244);
-    border: 0.2rem rgb(21, 4, 51) solid;
+    background: #d18af4;
+    border: 0.2rem #150433 solid;
     filter:drop-shadow(5px 5px 0 rgb(21, 4, 51));
     border-radius: 1rem;
     padding: 1rem;
@@ -140,6 +140,7 @@ button.pink-button {
     margin: auto;
 
 }
+
 .project_image {
     width: 15rem;
     height: 15rem;
@@ -151,8 +152,9 @@ button.pink-button {
     outline:lightgray solid 2px;
     /* filter:drop-shadow(5px 5px 0 rgb(209, 138, 244)); */
     margin-bottom: 1rem;
-    filter:drop-shadow(0 0 0 rgb(209, 138, 244));
+    filter:drop-shadow(0 0 0 #d18af4);
     transition: 0.3s;
+    cursor: pointer;
 }
 .project_image:hover {
     filter:drop-shadow(0 0 10px rgb(209, 138, 244));
@@ -178,7 +180,7 @@ button.pink-button {
     background-image: linear-gradient(to bottom right, rgb(21, 4, 51), rgb(209, 138, 244));
     padding: 2rem;
     padding-top: 0rem;
-    min-height: 75vh;
+    /* min-height: 75vh; */
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -235,6 +237,7 @@ button.pink-button {
     margin-bottom: 0.5rem;
     opacity: 0.5;
 }
+
 /* .home_popup {
     visibility: hidden;
     width: 160px;
@@ -319,7 +322,7 @@ button.pink-button {
     cursor:zoom-in;
 }
 .divider {
-    background-color: rgb(209, 138, 244);
+    background-color: #d18af4;
 }
 .animated_divider {
     width: 100%;
@@ -346,6 +349,7 @@ button.pink-button {
 	height:50px;
     filter: invert(100%)
 }
+
   
 
 /* ---------------------------------------------- @media for home */

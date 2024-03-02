@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+
+</head>
+    <body>
+        <h1 class="section_title">
+            Flourish (2023-24)
+                    </h1>
+        <section class="grid_section">
+            <div class="grid_text">
+                <p class="subtitle section_subtitle">
+                    Visual Design Internship
+                </p>
+            </div>
+            
+            <div class="image_section">
+
+                <div class="sunnie_reacts" id="anim_mood_1" onclick="change_cover(1)"></div>
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('anim_mood_1'),
+                        path: './images/Flourish/1_awesome_v1.json',
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: "Sunnie Reacts - Awesome",
+                    });           
+                </script>
+                <div class="sunnie_reacts" id="anim_mood_2" onclick="change_cover(2)"></div>
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('anim_mood_2'),
+                        path: './images/Flourish/2_good_v3.json',
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: "Sunnie Reacts - Good",
+                    });           
+                </script>
+                
+            </div>
+            <div class="image_section">
+                <div class="sunnie_reacts" id="anim_mood_3" onclick="change_cover(3)"></div>
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('anim_mood_3'),
+                        path: './images/Flourish/3_okay_v1.json',
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: "Sunnie Reacts - Okay",
+                    });           
+                </script>
+                <div class="sunnie_reacts" id="anim_mood_4" onclick="change_cover(4)"></div>
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('anim_mood_4'),
+                        path: './images/Flourish/4_bad_v1_FINAL.json',
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: "Sunnie Reacts - Bad",
+                    });           
+                </script>
+                <div class="sunnie_reacts" id="anim_mood_5" onclick="change_cover(5)"></div>
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('anim_mood_5'),
+                        path: './images/Flourish/5_terrible_v3.json',
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: "Sunnie Reacts - Terrible",
+                    });           
+                </script>
+            </div>
+        </section>
+        <section id="p-1" class="section blue figure_box">
+            
+            <div class="text_only">
+                <h2 class="box_title">
+                    
+                    Meet Sunnie
+                    
+                </h2>
+                <hr>
+                <p class="subtitle">
+                    "Flourish" is a personal well-being app currently under development.<br><br>
+                    Most of my projects having involved bringing to life "Sunnie," the app's cheerful sun mascot.<br>
+                    Other team members would create the illustrations that I would then export, divide into layers, and animate in Adobe After Effects.
+                    <br><br>
+                    Here we see some animations in the context of the app!
+
+                    <!-- During my time as a design and animation intern, I got a look into the
+                    mobile app development world with practical projects creating assets that will be deployed
+                    in the app. -->
+
+                </p> 
+                <!-- <p class="subtitle">
+                    <h2>My biggest takeaways:</h2>
+                    <ul>
+                        <li class="nice_list">Visual Design Systems</li>
+                        <li class="nice_list">Debugging</li>
+                        <li class="nice_list">Deployment</li>
+                    </ul>
+
+                </p>  -->
+                
+            </div>
+            
+            <div class="figure" id="moods_previews">
+                <div class="moods_preview_box">
+                    <!-- <img src="images/Flourish/1_awesome_preview.png" class="moods_preview_img"> -->
+                    <div class="moods_preview_img" id="breathing_fullscreen" ></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('breathing_fullscreen'),
+                            path: './images/Flourish/breathing_night_FULLSCREEN_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Awesome (full screen example)",
+                        });           
+                    </script>
+                </div>
+                <div class="moods_preview_box">
+                    <!-- <img src="images/Flourish/1_awesome_preview.png" class="moods_preview_img"> -->
+                    <div class="moods_preview_img" id="anim_mood_fullscreen" ></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('anim_mood_fullscreen'),
+                            path: './images/Flourish/1_awesome_FULLSCREEN.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Reacts - Awesome (full screen example)",
+                        });           
+                    </script>
+                </div>
+            </div>
+            <!-- <div class="figure">
+                
+            </div> -->
+            
+           
+        </section>
+        <section class="grid_section">
+            <div class="grid_text">
+                <p class="subtitle section_subtitle">
+                    Day and Night Versions
+                </p>
+            </div>
+            <div class="grid_reformat">
+                <div class="image_section">
+
+                    <div class="day_night" id="day_breathing" onclick="change_cover(1)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('day_breathing'),
+                            path: 'images/Flourish/day_night/breathing_day_FULLSCREEN_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Breathing - day",
+                        });           
+                    </script>
+                    <div class="day_night" id="night_breathing" onclick="change_cover(2)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('night_breathing'),
+                            path: 'images/Flourish/day_night/breathing_night_FULLSCREEN_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie Breathing - night",
+                        });           
+                    </script>
+                    
+                </div>
+                <div class="image_section">
+                    <div class="day_night" id="day_landing" onclick="change_cover(3)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('day_landing'),
+                            path: 'images/Flourish/day_night/cloudy_withText_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie - Cloudy sky",
+                        });           
+                    </script>
+                    <div class="day_night" id="night_landing" onclick="change_cover(4)"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('night_landing'),
+                            path: 'images/Flourish/day_night/starry_withText_v4.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie - Starry sky",
+                        });           
+                    </script>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <section id="p0" class="section blue figure_box">
+            
+            <div class="text_only">
+                <h2 class="box_title">My biggest takeaways:</h2>
+                    <ul>
+                        <li class="nice_list">Visual Design Systems</li>
+                        <li class="nice_list">Debugging</li>
+                        <li class="nice_list">Deployment</li>
+                    </ul>
+                 
+                
+            </div>
+
+            
+            
+        </section>
+    </body>
+</html>

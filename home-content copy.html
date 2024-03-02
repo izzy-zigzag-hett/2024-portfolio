@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+
+    <link href="./style/lightbox.css" rel="stylesheet"/>
+    <link href="./style/lightbox_v2.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="scripts/lightbox_v2.js"></script>
+
+
+</head>
+    <body>
+        <h1 class="section_title" style="margin-top: 1rem; font-size: 2rem;">
+            My work:
+        </h1>
+        <!-- <section class="grid_section">
+            <div class="grid_text">
+
+            </div>
+
+            <div class="row_section">
+                <img id="VIBRATIONS" src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png">
+                <img id="MONSTER_ALPHA" src="images/graphic_design/misc/color_black_v2.png">
+            </div>
+            <div class="image_section">
+                
+                
+                <img src="images/misc_mograph/milli_vs_centi_updated_v2.gif">
+                <img src="images/misc_mograph/pet_care_guide_resized 2.gif">
+            </div>
+            <div class="image_section">
+                <img src="">
+                <img src="images/misc_mograph/milli_vs_centi_updated_v2.gif">
+                <img src="images/misc_mograph/pet_care_guide_resized 2.gif">
+            </div>
+            
+        </section> -->
+
+        <section class="grid_section">
+            <div class="grid_text">
+
+            </div>
+
+            <ul class="image_gallery">
+                <li>
+                    <img id="VIBRATIONS" src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png">
+                    <div class="img_overlay">Vibrations Poster, 2022</div>
+                </li>
+                <li>
+                    <img id="MONSTER_ALPHA" src="images/graphic_design/misc/color_black_v2.png">
+                    <div class="img_overlay">Monster Alphabet Poster, 2022</div>
+                </li>
+            </ul>
+
+            <!-- Images used to open the lightbox -->
+<!-- <div class="row">
+    <div class="column image_gallery">
+      <img id="VIBRATIONS" src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <div class="img_overlay">Vibrations Poster, 2022</div>
+    </div>
+    <div class="column">
+      <img id="MONSTER_ALPHA" src="images/graphic_design/misc/color_black_v2.png"  onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    <div class="img_overlay">Monster Alphabet Poster, 2022</div>
+    </div>
+  </div> -->
+  <ul class="image_gallery">
+    <li onclick="openModal();currentSlide(1)">
+        <img id="VIBRATIONS" src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png">
+        <div class="img_overlay">Vibrations Poster, 2022</div>
+    </li>
+    <li onclick="openModal();currentSlide(2)">
+        <img id="MONSTER_ALPHA" src="images/graphic_design/misc/color_black_v2.png">
+        <div class="img_overlay">Monster Alphabet Poster, 2022</div>
+    </li>
+  </ul>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 2</div>
+        <img  src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 2</div>
+        <img  src="images/graphic_design/misc/color_black_v2.png" style="width:100%">
+      </div>
+  
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo"  src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/graphic_design/misc/color_black_v2.png" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <!-- <div class="column">
+        <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+      </div> -->
+    </div>
+  </div>
+            
+        </section>
+        
+    </body>
+</html>

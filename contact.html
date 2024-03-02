@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. | Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/project.css">
+    <link rel="stylesheet" href="./style/mograph.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link href="./style/lightbox.css" rel="stylesheet" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="project.js"></script>
+    <script type="text/javascript" src="scripts/mograph.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+    <!-- CONFIG -->
+    <meta name="description" content="Home page for UIUX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Embedded HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="jquery.js"></script>  -->
+    <script> 
+    $(function(){
+      $("#flourish_tab").load("/mograph_html/flourish_mograph.html"); 
+    });
+    $(function(){
+      $("#aof_tab").load("/mograph_html/aof_mograph.html"); 
+    });
+    $(function(){
+      $("#misc_tab").load("/mograph_html/misc_mograph.html"); 
+    });
+    $(function(){
+      $("#home_menu").load("menu_1.html"); 
+    });
+    </script> 
+</head>
+    <body>
+        
+        <div id="fadein"></div>
+        <a id="top_of_page"></a>
+        <div id="back_to_top">
+            <a href="#top_of_page" id="scroll-top-button">
+            <img src="images/arrow-up-bold-box-outline.svg" alt="Top of Page">
+            
+            </a>
+        </div>
+        <menu id="home_menu"></menu>
+        
+        <content id="project_content"> 
+         <div id="non-nav-content">
+
+        
+        <header class="project_header">
+            
+            <div class="header_text">
+                
+                <br>
+                <br>
+                <h1 class="page_title">
+                    Contact me:
+                </h1>
+                <!-- <hr> -->
+                <br>
+                <div id="contact_icons">
+                    <a href="mailto:ihettman@risd.edu" class="social_link">
+                        <div class="icon_and_text">
+                            <img src="images/icons/email-outline.svg" class="contact_icon">
+                            <p >Email</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/izzy-hettmansperger-2bb161230/" class="social_link">
+                        <div class="icon_and_text">
+                            <img src="images/icons/linkedin.svg" class="contact_icon">
+                            <p class="social_link">LinkedIn</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/hibounoir" class="social_link">
+                        <div class="icon_and_text">
+                            <img src="images/icons/instagram.svg" class="contact_icon">
+                            <p class="social_link">Instagram</p>
+                        </div>
+                    </a>
+                </div>
+                    
+                
+            </div>
+            
+        </header>
+        
+        
+        <main>
+            <section class="section pink" id="about_page">
+            
+                
+                <div id="about_image_box">
+                    <img src="images/about_image.jpg" id="about_image">
+                </div>
+                
+                    
+                <div id="about_bio">
+                    <h2 class="box_title">
+                    
+                        About
+                        
+                    </h2>
+                    <hr>
+                    <p id="about_bio_text">
+                        Howdy! I'm Izzy Hettmansperger. Though I'm originally from Boulder CO, I've been based in Providence RI since 2019 while completing my undergarduate degree(s) in the Brown | RISD Dual Degree program. 
+                        I am on track to graduate in May of 2024 with a B.F.A. in illustration and an A.B. in computer science.
+                        <br><br>
+                        Beyond the artforms in this portfolio, I am extemely passionate about many creative crafts, including multi-media sculpture, jewelry-making, sewing, and tattooing.
+
+
+                    </p> 
+                </div>
+                
+                    
+                    
+                
+            </section>
+        </main>
+
+            
+            
+        <footer>
+        Copyright Izzy Hettmansperger 2024
+        </footer>       
+        </main>
+        </div>
+
+        
+    </content>
+    
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,704 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. | Motion Graphics</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/project.css">
+    <link rel="stylesheet" href="./style/mograph.css">
+    <link href="./style/lightbox.css" rel="stylesheet" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="project.js"></script>
+    <script type="text/javascript" src="scripts/mograph.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+    <!-- CONFIG -->
+    <meta name="description" content="Home page for UIUX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+        
+        <div id="fadein"></div>
+        <a id="top_of_page"></a>
+        <div id="back_to_top">
+            <a href="#top_of_page">
+            <img src="images/arrow-up-bold-box-outline.svg">
+            </a>
+        </div>
+        <menu id="home_menu">
+            
+            <!-- <script>
+                function menu_home_popup() {
+                    var popup = document.getElementById("home_popup");
+                    popup.classList.toggle("show");
+                    console.log("popup")
+                }
+            </script>
+            <p class="home_popup" id="home_popup">Home</p> -->
+            <a href="index.html"><img id="menu_logo" src="./images/ih_logo_navy.svg"></a>
+            
+            <a href="mograph.html" class="menu_link"><div class="menubar bar bluebar">
+                <p class="menu_header">
+                    Motion Graphics
+                </p>
+            </div></a>
+            <a href="3d-animation.html" class="menu_link"><div class="menubar bar greenbar">
+                <p class="menu_header">
+                    Animation
+                </p>
+            </div></a>
+            <a class="menu_link"></a><div class="menubar bar yellowbar">
+                <p class="menu_header">
+                    Illustrative Design
+                </p>
+            </div></a>
+            <a class="menu_link"></a><div class="menubar bar pinkbar">
+                <p class="menu_header">
+                    About & Contact
+                </p>
+            </div></a>
+        </menu>
+        <content id="project_content"> 
+         <div id="non-nav-content">
+
+        
+        <header class="project_header">
+            <!-- <div id="header_bg" class="header_bg"></div> -->
+
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('header_bg'),
+                        path: './images/random_stars_2.json',
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: "stars",
+                    });           
+                </script>
+            <!-- <img id="logo_wiggley" src="./images/logo_rainbow_wiggling_3.gif"> -->
+            <div class="header_text">
+                
+                <br>
+                <br>
+                <h1 class="page_title">
+                    Motion Graphics
+                </h1>
+                <!-- <hr> -->
+                <br>
+                <p class="subtitle section_subtitle">
+                    From micro-interactions to templates and video projects, I can create a wide range of vector-based animations.
+                </p>
+            </div>
+            
+        </header>
+        
+        <!-- <hr class="divider"> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#flourish_button").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#HR_1").offset().top
+                    }, 2000);
+                });
+            });
+        </script> -->
+
+        <main>
+            <div class="section blue" id="internships_title">
+                <div class="figure_box">
+                    <div class="figure">
+                        <iframe class="youtube_iframe" src="https://www.youtube.com/embed/ROHLQzDILSc?si=n-kQK9414Qk8i4As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="figure_text">
+                       <h2>
+                            Motion Design Reel
+                        </h2>
+                        <hr>
+                        <p class="subtitle">
+                            This short video provides an overview of what I'm capable of.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <h1 class="section_title">Internships:</h1>
+            <section class="project_grid" >
+                <div class="container yellow">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            Flourish <br>(2023-24)
+                        </h2>
+                        <p class="project_desc">
+                           <b>Visual Design Internship</b>
+                        </p>
+                        <button id="flourish_button" onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" class="yellow-button">
+                        <!-- <button id="flourish_button" class="yellow-button"> -->
+
+                            View case study
+                        </button>
+                    </div>
+                    <div class="cover_image">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
+                        <a href="project.html" >
+                            <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
+                            height: 15rem;" loop autoplay></dotlottie-player>
+                        </a>
+                        <!-- <a href="project.html"><img class="project_image" src="./images/redesign_cover.png" alt="Library Website Redesign Cover Image"></a> -->
+                    </div>
+                    
+    
+                </div>
+                <div class="container green">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            AOFund <br> (2022)
+                        </h2>
+                        <p class="project_desc">
+                            <b>Animation Internship</b>
+                        </p>
+                        <button onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'}); aofTab()" class="green-button">
+                            View case study
+                        </button>
+                    </div>
+                    <div class="cover_image">
+                        <a href="index.html"><img class="project_image" src="./images/AOFund/aof_template_1.gif" alt="Looping gif with colorful animation"></a>
+                    </div>
+                </div>
+              
+                
+            </section>
+
+
+            <img class="animated_divider" src="./images/HR_1.gif" id="HR_1">
+
+            <div id="tab_titles">
+                
+                <div onclick=flourTab() id="flourish_tab_title" class="tab_title" >Flourish (2023-2024)</div>
+                <div onclick=aofTab() id="aof_tab_title" class="tab_title" style="background: rgba(209, 138, 244,0.7);">AOFund (2022)</div>
+                <div onclick=miscTab() id="misc_tab_title" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Misc. Projects</div>
+            </div>
+            <script>
+                // var tab_IDs = ['aof_tab_title','misc_tab_title','flourish_tab_title'];
+                // var tab_names = ['AOF_tab', 'flourish_tab', 'misc_tab'];
+
+                document.getElementById('flourish_tab_title').addEventListener("click", flourTab())
+                function flourTab(target) {
+                    document.getElementById('AOF_tab').style.display = "none";
+                    document.getElementById('flourish_tab').style.display = "block";
+                    document.getElementById('misc_tab').style.display = "none";
+                    document.getElementById('aof_tab_title').style.background = "rgba(209, 138, 244,0.7)";
+                    document.getElementById('misc_tab_title').style.background = "rgba(209, 138, 244,0.7)";
+                    document.getElementById('flourish_tab_title').style.background = "rgba(209, 138, 244,1)";
+                }
+                document.getElementById('aof_tab_title').addEventListener("click", aofTab())
+                function aofTab(target) {
+                    document.getElementById('AOF_tab').style.display = "block";
+                    document.getElementById('flourish_tab').style.display = "none";
+                    document.getElementById('misc_tab').style.display = "none";
+                    document.getElementById('aof_tab_title').style.background = "rgba(209, 138, 244,1)";
+                    document.getElementById('misc_tab_title').style.background = "rgba(209, 138, 244,0.7)";
+                    document.getElementById('flourish_tab_title').style.background = "rgba(209, 138, 244,0.7)";
+                }
+                document.getElementById('misc_tab_title').addEventListener("click", miscTab())
+                function miscTab(target) {
+                    document.getElementById('AOF_tab').style.display = "none";
+                    document.getElementById('flourish_tab').style.display = "none";
+                    document.getElementById('misc_tab').style.display = "block";
+                    document.getElementById('aof_tab_title').style.background = "rgba(209, 138, 244,0.7)";
+                    document.getElementById('misc_tab_title').style.background = "rgba(209, 138, 244,1)";
+                    document.getElementById('flourish_tab_title').style.background = "rgba(209, 138, 244,0.7)";
+                }
+            </script>
+            <div class="tab_body">
+                <div class="tab" id="misc_tab" style="display:none;">
+                    <h1 class="section_title">
+                        Various Projects
+                                </h1>
+                    <section class="grid_section">
+                        <div class="grid_text">
+                            <p class="subtitle section_subtitle">
+                                "Millipedes" Animated Poster Series (2023):
+                            </p>
+                        </div>
+                        <div class="image_section">
+                            <img class="millipede" src="images/misc_mograph/dont_say_nope 2.gif">
+                            <img class="millipede" src="images/misc_mograph/milli_vs_centi_updated_v2.gif">
+                            <img class="millipede" src="images/misc_mograph/pet_care_guide_resized 2.gif">
+                        </div>
+                        
+                    </section>
+                    <br>
+                    <section class="figure_box floating">
+                        
+                        <div class="figure_text" style="color:white">
+                            
+                            
+                            <p class="subtitle">
+                                This video is an introduction for an imagined TV show called "Bedtime Heroes." It was created entirely in Adobe After Effects with some Adobe Illustrator. <br><br>
+                                I used this project as an opportunity to practice simple vector animations and some typography.
+
+                            </p> 
+                            
+                            
+                        </div>
+                        <div class="figure">
+                            <iframe class="youtube_iframe" src="https://www.youtube.com/embed/ROHLQzDILSc?si=n-kQK9414Qk8i4As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                    </section>
+                    
+                    <section class="section yellow">
+                        <div class="text_only">
+                            <h2>
+                                <!-- <p class="section_subtitle"> -->
+                                Storyboards:
+                                <!-- </p> -->
+                            </h2>
+                            
+                            
+                        </div>
+                        <div class="image_section" id="bh_storyboards">
+                            <img class="bh_sb" src="images/misc_mograph/BH_storyboards_1.png">
+                            <img class="bh_sb" src="images/misc_mograph/BH_storyboards_2.png">
+
+                        </div>
+                        <div class="text_only">
+                            <h2 class="box_title">The animated video process:</h2>
+                            <p class="subtitle">
+                                
+                                
+                                Video projects like this one were great practice for understanding the production process from start to finish.<br><br>
+                                For projects at this scale, this was my step-by-step process:
+                                
+                            </p> 
+                            <ol>
+                                    <li class="nice_list">Brainstorm concise story</li>
+                                    <li class="nice_list">Edit audio to appropriate length</li>
+                                    <li class="nice_list">Storyboard visuals for each part of the audio</li>
+                                    <li class="nice_list">"Rough out" animation - creating and placing illustrations for each scene</li>
+                                    <li class="nice_list">Animate each scene, getting feedback piece by piece</li>
+                                    <li class="nice_list">Animation transitions, typography, final touches</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab" id="flourish_tab" >
+                            <h1 class="section_title">
+                        Flourish (2023-24)
+                                </h1>
+                    <section class="grid_section">
+                        <div class="grid_text">
+                            <p class="subtitle section_subtitle">
+                                Visual Design Internship
+                            </p>
+                        </div>
+                        
+                        <div class="image_section">
+
+                            <div class="sunnie_reacts" id="anim_mood_1" onclick="change_cover(1)"></div>
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('anim_mood_1'),
+                                    path: './images/Flourish/1_awesome_v1.json',
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: "Sunnie Reacts - Awesome",
+                                });           
+                            </script>
+                            <div class="sunnie_reacts" id="anim_mood_2" onclick="change_cover(2)"></div>
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('anim_mood_2'),
+                                    path: './images/Flourish/2_good_v3.json',
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: "Sunnie Reacts - Good",
+                                });           
+                            </script>
+                            
+                        </div>
+                        <div class="image_section">
+                            <div class="sunnie_reacts" id="anim_mood_3" onclick="change_cover(3)"></div>
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('anim_mood_3'),
+                                    path: './images/Flourish/3_okay_v1.json',
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: "Sunnie Reacts - Okay",
+                                });           
+                            </script>
+                            <div class="sunnie_reacts" id="anim_mood_4" onclick="change_cover(4)"></div>
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('anim_mood_4'),
+                                    path: './images/Flourish/4_bad_v1_FINAL.json',
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: "Sunnie Reacts - Bad",
+                                });           
+                            </script>
+                            <div class="sunnie_reacts" id="anim_mood_5" onclick="change_cover(5)"></div>
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('anim_mood_5'),
+                                    path: './images/Flourish/5_terrible_v3.json',
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: "Sunnie Reacts - Terrible",
+                                });           
+                            </script>
+                        </div>
+                    </section>
+                    <section id="p-1" class="section blue figure_box">
+                        
+                        <div class="text_only">
+                            <h2 class="box_title">
+                                
+                                Meet Sunnie
+                                
+                            </h2>
+                            <hr>
+                            <p class="subtitle">
+                                "Flourish" is a personal well-being app currently under development.<br><br>
+                                Most of my projects having involved bringing to life "Sunnie," the app's cheerful sun mascot.<br>
+                                Other team members would create the illustrations that I would then export, divide into layers, and animate in Adobe After Effects.
+                                <br><br>
+                                Here we see some animations in the context of the app!
+
+                                <!-- During my time as a design and animation intern, I got a look into the
+                                mobile app development world with practical projects creating assets that will be deployed
+                                in the app. -->
+
+                            </p> 
+                            <!-- <p class="subtitle">
+                                <h2>My biggest takeaways:</h2>
+                                <ul>
+                                    <li class="nice_list">Visual Design Systems</li>
+                                    <li class="nice_list">Debugging</li>
+                                    <li class="nice_list">Deployment</li>
+                                </ul>
+
+                            </p>  -->
+                            
+                        </div>
+                        
+                        <div class="figure" id="moods_previews">
+                            <div class="moods_preview_box">
+                                <!-- <img src="images/Flourish/1_awesome_preview.png" class="moods_preview_img"> -->
+                                <div class="moods_preview_img" id="breathing_fullscreen" ></div>
+                                <script>
+                                    var animation = bodymovin.loadAnimation({
+                                        container: document.getElementById('breathing_fullscreen'),
+                                        path: './images/Flourish/breathing_night_FULLSCREEN_v1.json',
+                                        renderer: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        name: "Sunnie Reacts - Awesome (full screen example)",
+                                    });           
+                                </script>
+                            </div>
+                            <div class="moods_preview_box">
+                                <!-- <img src="images/Flourish/1_awesome_preview.png" class="moods_preview_img"> -->
+                                <div class="moods_preview_img" id="anim_mood_fullscreen" ></div>
+                                <script>
+                                    var animation = bodymovin.loadAnimation({
+                                        container: document.getElementById('anim_mood_fullscreen'),
+                                        path: './images/Flourish/1_awesome_FULLSCREEN.json',
+                                        renderer: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        name: "Sunnie Reacts - Awesome (full screen example)",
+                                    });           
+                                </script>
+                            </div>
+                        </div>
+                        <!-- <div class="figure">
+                            
+                        </div> -->
+                        
+                       
+                    </section>
+                    <section class="grid_section">
+                        <div class="grid_text">
+                            <p class="subtitle section_subtitle">
+                                Day and Night Versions
+                            </p>
+                        </div>
+                        <div class="grid_reformat">
+                            <div class="image_section">
+
+                                <div class="day_night" id="day_breathing" onclick="change_cover(1)"></div>
+                                <script>
+                                    var animation = bodymovin.loadAnimation({
+                                        container: document.getElementById('day_breathing'),
+                                        path: 'images/Flourish/day_night/breathing_day_FULLSCREEN_v1.json',
+                                        renderer: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        name: "Sunnie Breathing - day",
+                                    });           
+                                </script>
+                                <div class="day_night" id="night_breathing" onclick="change_cover(2)"></div>
+                                <script>
+                                    var animation = bodymovin.loadAnimation({
+                                        container: document.getElementById('night_breathing'),
+                                        path: 'images/Flourish/day_night/breathing_night_FULLSCREEN_v1.json',
+                                        renderer: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        name: "Sunnie Breathing - night",
+                                    });           
+                                </script>
+                                
+                            </div>
+                            <div class="image_section">
+                                <div class="day_night" id="day_landing" onclick="change_cover(3)"></div>
+                                <script>
+                                    var animation = bodymovin.loadAnimation({
+                                        container: document.getElementById('day_landing'),
+                                        path: 'images/Flourish/day_night/cloudy_withText_v1.json',
+                                        renderer: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        name: "Sunnie - Cloudy sky",
+                                    });           
+                                </script>
+                                <div class="day_night" id="night_landing" onclick="change_cover(4)"></div>
+                                <script>
+                                    var animation = bodymovin.loadAnimation({
+                                        container: document.getElementById('night_landing'),
+                                        path: 'images/Flourish/day_night/starry_withText_v3.json',
+                                        renderer: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        name: "Sunnie - Starry sky",
+                                    });           
+                                </script>
+                                
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <section id="p0" class="section blue figure_box">
+                        
+                        <div class="text_only">
+                            <h2 class="box_title">My biggest takeaways:</h2>
+                                <ul>
+                                    <li class="nice_list">Visual Design Systems</li>
+                                    <li class="nice_list">Debugging</li>
+                                    <li class="nice_list">Deployment</li>
+                                </ul>
+                             
+                            
+                        </div>
+                        <!-- <div class="figure">
+                            
+                        </div> -->
+                        
+                        
+                    </section>
+                </div>
+                <div class="tab" id="AOF_tab" style="display: none;">
+                    <h1 class="section_title">
+                        AOFund (2022)
+                        </h1>
+                        <section class="grid_section">
+                            <div class="grid_text">
+                                <p class="subtitle section_subtitle">
+                                    Animation Internship
+                                </p>
+                            </div>
+                            
+                            <div class="image_section">
+                                <img class="aof_gifs" src="images/AOFund/aof_template_1.gif">
+                                <img class="aof_gifs" src="images/AOFund/gif_templates/coaches_corner.gif">
+                                <img class="aof_gifs" src="images/AOFund/gif_templates/in-person-events.gif">
+                            </div>
+                            <div class="image_section">
+                                <img class="aof_gifs" src="images/AOFund/gif_templates/news_pull_quote.gif">
+                                <img class="aof_gifs" src="images/AOFund/gif_templates/policy.gif">
+                                <img class="aof_gifs" src="images/AOFund/gif_templates/webinars.gif">
+                            </div>
+                            <div class="grid_text">
+                                <p class="subtitle section_subtitle">
+                                    Social media post templates - animations by me, designs by Clarissa Wong.
+                                </p>
+                            </div>
+                        </section>
+                    <section  class="section yellow figure_box">
+                        
+                        <div class="text_only">
+                            <h2>
+                                <!-- <p class="section_subtitle"> -->
+                                Animation with purpose
+                                <!-- </p> -->
+                            </h2>
+                            <hr>
+                            <p class="subtitle">
+                                Accion Opportunity Fund (AOF) is a non-profit lender that gives low interest loans to small businesses.<br><br>
+                                
+                                As an animator on the marketing team I did a combination of short motion graphics and longer 1-2 minute animated videos based on stories from their clients.
+
+                            </p> 
+                            
+                            
+                        </div>
+                        <!-- <div class="figure">
+                            
+                        </div> -->
+                        
+                        
+                    </section>
+                    <section class="figure_box floating">
+                        <div class="figure_text" style="color:white">
+                            
+                            
+                            <p class="subtitle">
+                                This video was created start to finish for Hispanic Heritage month. The audio is taken from a video interview with Reyna, a restaurant owner who recieved resources from AOF.
+
+                            </p> 
+                            
+                            
+                        </div>
+                        <div class="figure">
+                            <iframe class="youtube_iframe" src="https://www.youtube.com/embed/0QHVCtZK10w?si=5dnVIBjY3Bb_nZHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                    </section>
+                    
+                    <section class="section yellow">
+                        <div class="text_only">
+                            <h2>
+                                <!-- <p class="section_subtitle"> -->
+                                Storyboards:
+                                <!-- </p> -->
+                            </h2>
+                            
+                            
+                        </div>
+                        <div class="scrolling_box">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/01.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/02.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/03.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/04.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/05.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/06.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/07.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/08.jpg">
+                            <img class="scrolling_images sb1" src="images/AOFund/storyboards/09.jpg">
+                        </div>
+                        <div class="text_only">
+                            <h2 class="box_title">The animated video process:</h2>
+                            <p class="subtitle">
+                                
+                                
+                                Video projects like this one were great practice for understanding the production process from start to finish.<br><br>
+                                For projects at this scale, this was my step-by-step process:
+                                
+                            </p> 
+                            <ol>
+                                    <li class="nice_list">Brainstorm concise story</li>
+                                    <li class="nice_list">Edit audio to appropriate length</li>
+                                    <li class="nice_list">Storyboard visuals for each part of the audio</li>
+                                    <li class="nice_list">"Rough out" animation - creating and placing illustrations for each scene</li>
+                                    <li class="nice_list">Animate each scene, getting feedback piece by piece</li>
+                                    <li class="nice_list">Animation transitions, typography, final touches</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="figure_box floating">
+                        <div class="figure_text" style="color:white">
+                            
+                            
+                            <p class="subtitle">
+                                This video was based on an interview with Jackson, a 17-year-old apparel brand owner. I was a part of the interview process, brainstorming and asking him questions about his business and experiences with AOF. This video was never finished due to complications with the interviewee.
+
+                            </p> 
+                            
+                            
+                        </div>
+                        <div class="figure">
+                            <iframe class="youtube_iframe" src="https://www.youtube.com/embed/eBugmfLfAUs?si=0-mJflF6ZdaDUXGf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                    </section>
+                    
+                    <section class="section yellow">
+                        <div class="text_only">
+                            <h2>
+                                <!-- <p class="section_subtitle"> -->
+                                Storyboards:
+                                <!-- </p> -->
+                            </h2>
+                            
+                            
+                        </div>
+                        <div class="scrolling_box">
+                            <img class="scrolling_images sb2" src="images/AOFund/storyboards/CS_1.png">
+                            <img class="scrolling_images sb2" src="images/AOFund/storyboards/CS_2.png">
+                            <img class="scrolling_images sb2" src="images/AOFund/storyboards/CS_3.png">
+                            <img class="scrolling_images sb2" src="images/AOFund/storyboards/jackson_trustingaof_1_cs.png">
+                            <img class="scrolling_images sb2" src="images/AOFund/storyboards/jackson_trustingaof_2_cs.png">
+                            <img class="scrolling_images sb2" src="images/AOFund/storyboards/jackson_trustingaof_3_cs.png">
+
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+            
+            
+            
+        <footer>
+        Copyright Izzy Hettmansperger 2024
+        </footer>       
+        </main>
+        </div>
+        <!-- <div id="left_side_bar">
+            <div id="menu_organizer">
+                <nav>
+                    <a href="#p1" class="nav_link">
+                        <h4>
+                            1. Flourish (2023)
+                        </h4>
+                    </a>
+                    <a href="#p2" class="nav_link"><h4>
+                        2. AOFund (2022)
+                    </h4></a>
+                    <a href="#p3" class="nav_link"><h4>
+                        3. Additional Mograph
+                    </h4></a>
+                
+                </nav> 
+            </div>
+                       
+        </div> -->
+        
+    </content>
+    
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    
+    </body>
+</html>
