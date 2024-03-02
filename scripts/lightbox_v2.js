@@ -1,14 +1,15 @@
 // pause videos
 var videos = document.getElementsByClassName("video_clip");
 function stopAllVideos() {
-  for (i = 0; i < dots.length; i++) {
+  // console.log("attempted to pause!");
+  for (i = 0; i < videos.length; i++) {
     videos[i].pause();
     videos[i].currentTime = 0;
     // video.pause();
     // video.currentTime = 0;
     
   }
-  console.log("attempted to pause!");
+  
 }
 
 // Open the Modal
@@ -27,8 +28,10 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+  debugger;
   showSlides(slideIndex += n);
-  stopAllVideos();
+  console.log("pluslides");
+  // stopAllVideos();
 }
 
 // Thumbnail image controls
