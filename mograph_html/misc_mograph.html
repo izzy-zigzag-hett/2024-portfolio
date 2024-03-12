@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+    <link rel="stylesheet" href="./style/slideshow.css">
+    <script type="text/javascript" src="scripts/slideshow.js"></script>
 
 </head>
     <body>
@@ -51,11 +53,46 @@
                 
                 
             </div>
-            <div class="image_section" id="bh_storyboards">
+            <!-- <div class="image_section" id="bh_storyboards">
                 <img class="bh_sb" src="images/misc_mograph/BH_storyboards_1.png">
                 <img class="bh_sb" src="images/misc_mograph/BH_storyboards_2.png">
 
+            </div> -->
+
+
+
+
+            <div class="slideshow-container" id="bh">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="bh_sb_1 fade" style="display: block;">
+                
+                <img src="images/misc_mograph/BH_storyboards_1.png" style="width:100%">
+                <div class="numbertext">1 / 2</div>
+                <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+            
+                <div class="bh_sb_1 fade">
+                    
+                    <img src="images/misc_mograph/BH_storyboards_2.png" style="width:100%">
+                    <div class="numbertext">2 / 2</div>
+                    <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+            
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlidesB(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesB(1)">&#10095;</a>
             </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dotB" onclick="currentSlideB(1)"></span>
+                <span class="dotB" onclick="currentSlideB(2)"></span>
+            </div>
+
+
             <div class="figure_box " style="width: 100%; ">
                 <div class="figure_text">
                     <h2 class="box_title">Goals:</h2>
@@ -76,7 +113,7 @@
                 </div>
                 <div class="figure">
                     <h2>Storyboard video:</h2>
-                    <iframe class="youtube_iframe" src="https://www.youtube.com/embed/CRyQCfZs7OE?si=qKWrDXv5cszp54R3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="youtube_iframe" src="https://www.youtube.com/embed/CRyQCfZs7OE?si=qKWrDXv5cszp54R3" style="border: lightgray 2px solid;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
             

@@ -332,10 +332,11 @@ p.subtitle {
 .image_section {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     margin:auto;
     align-items: center;
     justify-content: center;
+    gap:0;
 }
 .sunnie_reacts {
     /* width: 500px; */
@@ -346,7 +347,7 @@ p.subtitle {
     width: 90%;
     margin:auto;
     background: rgba(255,255,255,0.1);
-    border: rgb(209, 138, 244) solid 3px;
+    border: #d18af4 solid 3px;
     padding: 2rem 1rem;
 }
 #tab_titles {
@@ -438,6 +439,101 @@ p.subtitle {
     opacity: 100%;
 }
 
+.gh_logo_section {
+    width: 90%;
+    margin:auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 30% 70%;
+}
+.bh_package_section {
+    width: 90%;
+    margin:auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+.gh_logo {
+    Width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.bh_package_big {
+    width: calc(90% + 10px);
+    margin: 10px auto auto auto;
+}
+.gh_logo img {
+    Width: 100%;
+    object-position: center;
+}
+
+#sunnie_halves {
+    background-image: linear-gradient(to bottom top, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0));
+    transform: translate(0,35%);
+    margin-top: -3rem;
+    /* position: relative;
+    
+    bottom: -90%; */
+    z-index:2;
+    /* align-items: flex-start; */
+}
+
+.icon_chain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.program_icon {
+    /* height: 1rem; */
+    height: 4rem;
+}
+#sunnie_emotes_5 {
+    width: 90%;
+    margin:auto;
+}
+
+#spc_logo_section {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    width: 90%;
+    margin:auto;
+}
+
+#spc_logo_context {
+    /* display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px; */
+    width: 90%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    height: calc(20vw);
+    flex: 1 1 auto;
+    gap:10px;
+    justify-content: center;
+
+}
+
+
+#bh_storyboards {
+    flex-direction: row;
+    width: 80%;
+}
+/* #sunnie_halves_section {
+    height: 300px;
+    position: relative;
+} */
 
 /* .lottie_holder {
 
@@ -544,6 +640,24 @@ p.subtitle {
 
     
     }
+    .icon_chain {
+        margin:auto;
+    }
+    #bh_storyboards {
+        flex-direction: column;
+        width: 100%;
+    }
+    .scalable {
+        width: 100%;
+    }
+    .micro-animations {
+        display: none;
+    }
+    #sunnie_halves {
+
+        transform: translate(0,30%);
+
+    }
  }
 @media (min-width: 768px) and (max-width: 1200px) { 
     
@@ -596,6 +710,9 @@ p.subtitle {
     
 
     
+    }
+    .icon_chain {
+        margin:auto;
     }
 
 }

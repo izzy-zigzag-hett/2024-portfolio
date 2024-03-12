@@ -1,6 +1,17 @@
 <!doctype html>
 <html>
 <head>
+    <link rel="stylesheet" href="./style/slideshow.css">
+    <script type="text/javascript" src="scripts/slideshow.js"></script>
+
+    <!-- Embedded HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="jquery.js"></script>  -->
+    <script> 
+    $(function(){
+      $("#jackson_sb").load("/mograph_html/jackson_aof.html"); 
+    });
+    </script> 
 
 </head>
     <body>
@@ -31,7 +42,7 @@
                     </p>
                 </div>
             </section>
-        <section  class="section yellow figure_box">
+        <section  class="section yellow figure_box scalable">
             
             <div class="text_only">
                 <h2>
@@ -72,8 +83,8 @@
 
         </section>
         
-        <section class="section yellow">
-            <div class="text_only">
+        <section class="section yellow scalable" >
+            <div class="text_only" style="text-align: center;">
                 <h2>
                     <!-- <p class="section_subtitle"> -->
                     Storyboards:
@@ -82,7 +93,7 @@
                 
                 
             </div>
-            <div class="scrolling_box">
+            <!-- <div class="scrolling_box">
                 <img class="scrolling_images sb1" src="images/AOFund/storyboards/01.jpg">
                 <img class="scrolling_images sb1" src="images/AOFund/storyboards/02.jpg">
                 <img class="scrolling_images sb1" src="images/AOFund/storyboards/03.jpg">
@@ -92,7 +103,73 @@
                 <img class="scrolling_images sb1" src="images/AOFund/storyboards/07.jpg">
                 <img class="scrolling_images sb1" src="images/AOFund/storyboards/08.jpg">
                 <img class="scrolling_images sb1" src="images/AOFund/storyboards/09.jpg">
+            </div> -->
+
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container" id="geurrera">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="aof_sb_1 fade">
+                
+                <img src="images/AOFund/storyboards/01.jpg" style="width:100%">
+                <div class="numbertext">1 / 6</div>
+                <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+            
+                <div class="aof_sb_1 fade">
+                    
+                    <img src="images/AOFund/storyboards/02.jpg" style="width:100%">
+                    <div class="numbertext">2 / 6</div>
+                    <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+            
+                <div class="aof_sb_1 fade">
+                        
+                        <img src="images/AOFund/storyboards/03.jpg" style="width:100%">
+                        <div class="numbertext">3 / 6</div>
+                        <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+
+                <div class="aof_sb_1 fade">
+                        
+                        <img src="images/AOFund/storyboards/04.jpg" style="width:100%">
+                        <div class="numbertext">4 / 6</div>
+                        <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+            
+                <div class="aof_sb_1 fade">
+                        
+                        <img src="images/AOFund/storyboards/05.jpg" style="width:100%">
+                        <div class="numbertext">5 / 6</div>
+                        <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+            
+                <div class="aof_sb_1 fade">
+                        
+                        <img src="images/AOFund/storyboards/06.jpg" style="width:100%">
+                        <div class="numbertext">6 / 6</div>
+                        <!-- <div class="carousel_text">Caption Text</div> -->
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+
+
             <div class="text_only">
                 <h2 class="box_title">The animated video process:</h2>
                 <p class="subtitle">
@@ -129,26 +206,6 @@
 
         </section>
         
-        <section class="section yellow">
-            <div class="text_only">
-                <h2>
-                    <!-- <p class="section_subtitle"> -->
-                    Storyboards:
-                    <!-- </p> -->
-                </h2>
-                
-                
-            </div>
-            <div class="scrolling_box">
-                <img class="scrolling_images sb2" src="images/AOFund/storyboards/CS_1.png">
-                <img class="scrolling_images sb2" src="images/AOFund/storyboards/CS_2.png">
-                <img class="scrolling_images sb2" src="images/AOFund/storyboards/CS_3.png">
-                <img class="scrolling_images sb2" src="images/AOFund/storyboards/jackson_trustingaof_1_cs.png">
-                <img class="scrolling_images sb2" src="images/AOFund/storyboards/jackson_trustingaof_2_cs.png">
-                <img class="scrolling_images sb2" src="images/AOFund/storyboards/jackson_trustingaof_3_cs.png">
-
-            </div>
-            
-        </section>
+        <div id="jackson_sb"></div>
         </body>
         </html>

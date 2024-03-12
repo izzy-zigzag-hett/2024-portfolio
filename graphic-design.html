@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./style/project.css">
     <link rel="stylesheet" href="./style/mograph.css">
     <link href="./style/lightbox.css" rel="stylesheet" />
+    <link href="./style/lightbox.css" rel="stylesheet"/>
+    <link href="./style/lightbox_v2.css" rel="stylesheet"/>
+    <script type="text/javascript" src="scripts/lightbox_v2.js"></script>
+    <script type="text/javascript" src="scripts/proportional.js"></script>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +41,12 @@
 
         $(function(){
           $("#home_menu").load("menu_1.html"); 
+        });
+        $(function(){
+          $("#logos_tab").load("gd_html/gd_logos.html"); 
+        });
+        $(function(){
+          $("#posters_print_tab").load("gd_html/gd_posters_print.html"); 
         });
     </script> 
 
@@ -69,7 +79,7 @@
                 <!-- <hr> -->
                 <br>
                 <p class="subtitle section_subtitle">
-                    My graphic design stems from my background in illustration, so I have built my skills around making bright, aesthetically pleasing graphics that convey messages.
+                    My graphic design stems from my background in illustration, so I have built my skills around making bright, aesthetically pleasing graphics that convey messages and stories.
                 </p>
             </div>
             
@@ -78,7 +88,7 @@
 
 
         <main>
-            <div class="section green" id="internships_title">
+            <!-- <div class="section green" id="internships_title">
                 <div class="figure_box">
                     <div class="figure">
                         <iframe class="youtube_iframe" src="https://www.youtube.com/embed/d0zpO5-4vmY?si=xFtpSl09cfQ5Fish" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -94,8 +104,118 @@
 
                     </div>
                 </div>
-            </div>
-            <h1 class="section_title">Projects:</h1>
+            </div> -->
+            <h1 class="section_title">Various Projects:</h1>
+            <section class="grid_section">
+
+                <div class="image_gallery">
+                  <div class="gallery_column">
+                    <div class="img_and_label" onclick="openModal();currentSlide(3)">
+                        <img id="millipedes_1" src="images/misc_mograph/dont_say_nope 2.gif">
+                        <div class="img_overlay">"Don't Say Nope" Millipede Informational Posters <p class="year">2023</p></div>
+                    </div>
+                    <div class="img_and_label" onclick="openModal();currentSlide(6)">
+                        <img id="zete_rush_cal" src="images/graphic_design/zete/calendar_one-sided.png">
+                        <div class="img_overlay">Zete Rush Calander Flyer <p class="year">2022</p></div>
+                    </div>
+                      
+                      
+                      
+                      
+                  </div>
+                  <div class="gallery_column">
+              
+                      
+              
+                      <div class="img_and_label" onclick="openModal();currentSlide(3)">
+                          <img src="images/graphic_design/misc/jellyfish-02.png">
+                          <div class="img_overlay">Jellyf(i)sh Illustrated Monogram<p class="year">2021</p></div>
+                      </div>
+                      
+                    <div class="img_and_label" onclick="openModal();currentSlide(3)">
+                        <img id="MONSTER_ALPHA" src="images/graphic_design/misc/color_black_v2.png">
+                        <div class="img_overlay">Monster Alphabet Poster <p class="year">2022</p></div>
+                    </div>
+              
+                      
+              
+                  </div>
+                  <div class="gallery_column">
+                    <div class="img_and_label" onclick="openModal();currentSlide(3)">
+                        <img src="images/graphic_design/soul_penny/soulpenny-logo-circle_V1.png">
+                        <div class="img_overlay">Soul Penny Circus Logo and Merchandise Designs<p class="year">2022</p></div>
+                    </div>
+                      
+                      <div class="img_and_label" onclick="openModal();currentSlide(1)">
+                        <img id="VIBRATIONS" src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png">
+                        <div class="img_overlay">Vibrations Poster<p class="year">2022</p></div>
+                    </div>
+                  </div>
+                  
+                  
+              </div>
+                
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="modal-content">
+                
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 3</div>
+                      <img  src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png" >
+                    </div>
+                    
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 3</div>
+                      <video controls autoplay muted class="video_clip">
+                          <source src="images/misc_mograph/izzy_countdown_v5_15s_720p.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                    </div>
+              
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/graphic_design/misc/color_black_v2.png" >
+                    </div>
+              
+                    
+                
+                
+                    <!-- Next/previous controls -->
+                    <div class="prev" onclick="plusSlides(-1); stopAllVideos()">
+                          <span>&#10094;</span>
+                    </div>
+                    <div class="next" onclick="plusSlides(1); stopAllVideos()">
+                          <span>&#10095;</span>
+                    </div>
+                    <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                
+                    <!-- Thumbnail image controls -->
+                    <div class="modal_thumbnail_box">
+                          <div class="column">
+                              <img class="modal-preview"  src="images/graphic_design/misc/vibrations_poster_v2_SMALL.png" onclick="currentSlide(1)" alt="Vibrations Poster">
+                          </div>
+              
+                          <div class="column">
+                              <img class="modal-preview"  src="images/misc_mograph/countdown_preview.png" onclick="currentSlide(2)" alt="Countdown">
+                          </div>
+                      
+                          <div class="column">
+                              <img class="modal-preview" src="images/graphic_design/misc/color_black_v2.png" onclick="currentSlide(3)" alt="Monster Alphabet">
+                          </div>
+                    </div>
+                    
+                
+              
+                  </div>
+                </div>
+                          
+                      </section>
             
 
 
@@ -109,7 +229,10 @@
             </div>
             
                 <div class="tab_body">
-                <div class="tab" id="flourish_tab" >
+                <div class="tab" id="posters_print_tab">
+
+
+                    
                     
                 </div>
             </div>
@@ -126,8 +249,13 @@
                 <div onClick="document.getElementById('HR_3').scrollIntoView();" id="misc_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Misc. Projects</div>
             </div>
                 <div class="tab_body">
-                <div class="tab" id="aof_tab" >
+                <div class="tab" id="logos_tab">
+
                     
+                    
+                    
+                    
+
                 </div>
             </div>
 

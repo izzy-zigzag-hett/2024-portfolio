@@ -7,7 +7,7 @@
         <h1 class="section_title">
             Flourish (2023-24)
                     </h1>
-        <section class="grid_section">
+        <section class="grid_section" id="sunnie_emotes_5">
             <div class="grid_text">
                 <p class="subtitle section_subtitle">
                     Visual Design Internship
@@ -86,15 +86,29 @@
                 </h2>
                 <hr>
                 <p class="subtitle">
-                    "Flourish" is a personal well-being app currently under development.<br><br>
-                    Most of my projects having involved bringing to life "Sunnie," the app's cheerful sun mascot.<br>
-                    Other team members would create the illustrations that I would then export, divide into layers, and animate in Adobe After Effects.
-                    <br><br>
-                    Here we see some animations in the context of the app!
+                    "Flourish" is a personal well-being app currently in development.<br><br>
+                    Many of my projects involved collaborating with team members to bring illustrations of "Sunnie" - the app's cheerful sun mascot - to life through animation.<br>
+                    <!-- I would export the illustrations, divide them into layers, and animate in Adobe After Effects. -->
+                    
 
                     <!-- During my time as a design and animation intern, I got a look into the
                     mobile app development world with practical projects creating assets that will be deployed
                     in the app. -->
+
+                </p> 
+                <div class="icon_chain">
+                    <img src="images\icons\programs\figma_color.png" class="program_icon">
+                    <img src="images/icons/programs/ray-start-arrow.svg" class="program_icon">
+                    <img src="images/icons/programs/illustrator.png" class="program_icon">
+                    <img src="images/icons/programs/ray-start-arrow.svg" class="program_icon">
+                    <img src="images/icons/programs/after-effects.png" class="program_icon">
+                    <img src="images/icons/programs/ray-start-arrow.svg" class="program_icon">
+                    <img src="images/icons/programs/lottie_color.svg" class="program_icon">
+                </div>
+                
+                <p class="subtitle">
+                    My multi-program workflow started with taking illustrations from Figma into Adobe Illustrator, divide them into working layers, and then animating them in Adobe After Effects.
+                    <br><br> Finally, I would export the animations into a modern web-based animation format called "Lottie," which is vector scalable and more efficiant than other image types.
 
                 </p> 
                 <!-- <p class="subtitle">
@@ -148,7 +162,7 @@
         <section class="grid_section">
             <div class="grid_text">
                 <p class="subtitle section_subtitle">
-                    Day and Night Versions
+                    Day and Night Screen Variations
                 </p>
             </div>
             <div class="grid_reformat">
@@ -206,14 +220,71 @@
             </div>
             
         </section>
-        <section id="p0" class="section blue figure_box">
+        <br>
+        <section class="grid_section" id="sunnie_halves_section">
+            <div class="grid_text">
+                <p class="subtitle section_subtitle">
+                    Weekly Report Animations
+                </p>
+            </div>
+            <div class="grid_reformat" id="sunnie_halves">
+                <div id="ma_new_week" ></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('ma_new_week'),
+                            path: 'images/Flourish/micro-animations/new_week_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie - New Weekly Report",
+                        });           
+                    </script>
+                    <div class="micro-animations" id="ma_unlocked_good"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('ma_unlocked_good'),
+                            path: 'images/Flourish/micro-animations/unlocked_report_goodDay_v1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie - Report Unlocked (Good Day)",
+                        });           
+                    </script>
+                    <div class="micro-animations" id="ma_unlocked_bad"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('ma_unlocked_bad'),
+                            path: 'images/Flourish/micro-animations/unlocked_report_badDay_v2.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie - Report Unlocked (Bad Day)",
+                        });           
+                    </script>
+                    <div class="micro-animations" id="ma_report_ready"></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('ma_report_ready'),
+                            path: 'images/Flourish/micro-animations/report_ready_v2.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Sunnie - Report Ready",
+                        });           
+                    </script>
+            </div>
+
+        </section>
+        <section id="p5" class="section blue figure_box">
             
             <div class="text_only">
                 <h2 class="box_title">My biggest takeaways:</h2>
                     <ul>
-                        <li class="nice_list">Visual Design Systems</li>
-                        <li class="nice_list">Debugging</li>
-                        <li class="nice_list">Deployment</li>
+                        <li class="nice_list"><b>Visual Identity</b> - matching existing systems, expanding on and contributing to those systems</li>
+                        
+                        <li class="nice_list"><b>Deployment</b> - making assets picture-perfect, converting between file types</li>
+
+                        <li class="nice_list"><b>Problem-solving</b> - interpreting broad instructions from team members; de-bugging rendering issues,</li>
                     </ul>
                  
                 
