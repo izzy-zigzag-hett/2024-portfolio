@@ -37,18 +37,63 @@
     $(function(){
       $("#home_menu").load("menu_1.html"); 
     });
+   
 
     </script> 
     
     
 </head>
     <body>
+        <a id="top_of_page"></a>
+
         
+        <div id="back_to_top">
+            <div id="scroll-top-button" onClick="document.getElementById('top_of_page').scrollIntoView();">
+            <img src="images/arrow-up-bold-box-outline.svg" alt="Top of Page">
+            
+            </div>
+        </div>
         <menu id="home_menu">
         </menu>
         
         
         
+        
+        <main id="home_main">
+            <script>
+
+
+                // $('#home_menu').css({
+                //     opacity: function() {
+                //         var scrolled = document.getElementById('home_main').scrollHeight
+                //         console.log("scroll top value" + scrolled)
+                //         opacity = 1 - scrolled;
+                //         return opacity;
+                //     }
+                // });
+
+                var menu= document.getElementById('home_menu');
+                    window.addEventListener('scroll', function(e) {
+                    // http://stackoverflow.com/a/28633515/962603
+                    var scroll = window.pageYOffset || document.documentElement.scrollTop ||
+                                    document.body.scrollTop || 0;
+                    
+                    menu.style.transition = '0.5s';
+                    menu.style.opacity = Math.max(0, Math.min(1, -scroll / 400 + 2));
+                    menu.onmouseover = function(){
+                        menu.style.opacity = 1;
+                    };
+
+
+                    menu.onmouseleave = function() {
+                        menu.style.opacity = Math.max(0, Math.min(1, -scroll / 400 + 2));
+                    }
+                    
+                    });
+
+                    
+            </script>
+
         
         <header class="home_header">
             <div class="header_text">
@@ -65,7 +110,7 @@
                 <h1 id="hook">
                     
                     How can I help you create something amazing?
-                    <button id="contact-button">Contact me!</button>
+                    <button id="contact-button" onClick="document.getElementById('about_and_contact').scrollIntoView();">Contact me!</button>
                 </h1>
             </div>
             <!-- <div>
@@ -86,19 +131,19 @@
             <div class="container yellow skill">
                 <div class="project_text">
                     <h2 class="project_title">
-                        Motion Graphics & Animations
+                        Motion Design & Animation
                     </h2>
                     <p class="project_desc">
                         A variety of animations designed to catch your eye, guide you through user experiences, and tell stories.
                     </p>
-                    <button onclick="window.location.href='mograph.html';" class="yellow-button">
-                        View MoGraph Portfolio
+                    <button onClick="document.getElementById('mograph_content').scrollIntoView();" class="yellow-button">
+                        View Motion Portfolio
                     </button>
                 </div>
                 <div class="project_cover">
                     
 
-                    <a href="mograph.html" >
+                    <a onClick="document.getElementById('mograph_content').scrollIntoView();" >
                         <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
                         height: 15rem;" loop autoplay></dotlottie-player>
                     </a>
@@ -115,25 +160,27 @@
                     </h2>
                     <p class="project_desc">
                         Anything you need in the realm of graphic design and illustration, I can make it, including vector graphics, typographic layouts, logos, and more.</p>
-                    <button onclick="window.location.href='graphic-design.html';" class="green-button">
+                    <button onClick="document.getElementById('graphic_design_content').scrollIntoView();" class="green-button">
                         View Design Portfolio
                     </button>
                 </div>
                 <div class="project_cover">
-                    <a href="graphic-design.html"><img class="project_image" src="./images/graphic_design/greenhouse/greenhouse-leafhands.png" alt="Iterative App Design"></a>
+                    <a onClick="document.getElementById('graphic_design_content').scrollIntoView();"><img class="project_image" src="./images/graphic_design/greenhouse/greenhouse-leafhands.png" alt="Iterative App Design"></a>
                 </div>
             </div>
             <div class="container blue skill">
                 <div class="project_text">
                     <h2 class="project_title">
                         <!-- 3D Animation & Assets -->
-                        Creative Animation & Asset Creation
+                        <!-- Creative Animation & Asset Creation -->
+                        Storyboards and Process Work
                     </h2>
                     <p class="project_desc">
-                        Playful animations that center storytelling, created for enjoyment and satisfaction.
+                        <!-- Playful animations that center storytelling, created for enjoyment and satisfaction. -->
+                        This skill is critical for any creative project, big or small. I have plenty of experience with making visual plans, which make collaboration with team members even easier.
                     </p>
                     <button onclick="window.location.href='animation-3d.html';" class="blue-button">
-                        View Animation Portfolio
+                        View Process Work
                     </button>
                 </div>
                 <div class="project_cover">
@@ -142,13 +189,38 @@
             </div>
             
         </section>
-        
-        <section id="home_content">
 
-        </section>
+        <div class="section pink" id="internships_title">
+            <div class="figure_box">
+                <div class="figure">
+                    <iframe class="youtube_iframe" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen &vq=hd720 style="border: lightgray 2px solid;"></iframe>
+                </div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                <div class="figure_text">
+                   <h2>
+                        My Reel
+                    </h2>
+                    <hr>
+                    <p class="subtitle">
+                        This short video provides an overview of what I'm capable of (in animation and motion graphics).
+                    </p>
+                    <p class="subtitle">
+                        Video duration - 1:20
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        
+        <section id="home_content"></section>
+
+
+        
         <footer>
             Copyright Izzy Hettmansperger 2024
         </footer>
-        <div id="fadein"></div>
+        
+    </main>
+    <div id="fadein"></div>
     </body>
 </html>

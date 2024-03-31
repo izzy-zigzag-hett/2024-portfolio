@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. | Graphic Design</title>
+
+
+    <!-- Embedded HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+
+        $(function(){
+          $("#home_menu").load("menu_1.html"); 
+        });
+        $(function(){
+          $("#logos_tab").load("gd_html/gd_logos.html"); 
+        });
+        $(function(){
+          $("#posters_print_tab").load("gd_html/gd_posters_print.html"); 
+        });
+    </script> 
+
+</head>
+    <body>
+        
+   
+
+        <content> 
+         <div>
+
+        
+        <header class="project_header">
+            
+            <!-- <img id="logo_wiggley" src="./images/logo_rainbow_wiggling_3.gif"> -->
+            <div class="header_text">
+                
+                <br>
+                <br>
+                <h1 class="page_title">
+                    <span style="color:#6fc9e7">&#128970;   </span>Motion Graphics<span style="color:#6fc9e7">   &#128970;</span>
+                </h1>
+                <!-- <hr> -->
+                <br>
+                <p class="subtitle section_subtitle">
+                    From micro-interactions and templates to animated story-telling, I can create a wide range of unique vector-based animations.
+            </div>
+            
+        </header>
+        
+        <br>
+
+        <main>
+
+            <h1 class="section_title">Internships:</h1>
+            <section class="project_grid" >
+                <div class="container yellow">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            Flourish <br>(2023-24)
+                        </h2>
+                        <p class="project_desc">
+                           <b>Visual Design Internship</b>
+                        </p>
+                        <button id="flourish_button" onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" class="yellow-button">
+                        <!-- <button id="flourish_button" class="yellow-button"> -->
+
+                            View case study
+                        </button>
+                    </div>
+                    <div class="cover_image">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
+                        <a  onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" >
+                            <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
+                            height: 15rem;" loop autoplay></dotlottie-player>
+                        </a>
+
+                        <!-- <a onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});"><div class="project_image" id="flourish_cover" background="#cceeff"></div></a>
+                        <script>
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('flourish_cover'),
+                                path: './images/Flourish/flourish_glowHeartbeat_1.json',
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                name: "Sunnie with beating heart",
+                            });           
+                        </script> -->
+                    </div>
+                    
+    
+                </div>
+                <div class="container green">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            AOFund <br> (2022)
+                        </h2>
+                        <p class="project_desc">
+                            <b>Animation Internship</b>
+                        </p>
+                        <button onClick="document.getElementById('HR_2').scrollIntoView();" class="green-button">
+                            View case study
+                        </button>
+                    </div>
+                    <div class="cover_image">
+                        <img onClick="document.getElementById('HR_2').scrollIntoView();" class="project_image" src="./images/AOFund/aof_template_1.gif" alt="Looping gif with colorful animation">
+                    </div>
+                </div>
+              
+                
+            </section>
+            <img class="animated_divider" src="./images/HR_1.gif" id="HR_1">
+            
+            <!-- <h1 class="section_title">Various Projects:</h1> -->
+            <section class="grid_section">
+                <h1 class="section_title">Selected projects:</h1>
+                <div class="image_gallery">
+                  <div class="gallery_column">
+
+                    <div class="img_and_label" onclick="openModal();currentSlide('guerreras')">
+                        <img src="images/misc_anim/aof_01.gif">
+                        <div class="img_overlay">AOF La Geurrera's Kitchen (for AOF)<p class="year">2022</p>
+                    </div></div>
+
+                      <div class="img_and_label" onclick="openModal();currentSlide('AOF_templates')">
+                        <img src="images/AOFund/aof_template_1.gif">
+                        <div class="img_overlay">AOF Social Media Templates<p class="year">2022</p></div>
+                      </div>
+
+                      <div class="img_and_label" onclick="openModal();currentSlide('chrysalis')">
+                        <video autoplay muted loop class="grid_video">
+                            <source src="images/misc_anim/chrysalis_2_LR.mp4" type="video/mp4" >
+                            Your browser does not support the video tag.
+                          </video>
+                        <div class="img_overlay">The Chrysalis<p class="year">2020</p></div>
+                      </div>
+                      
+                      
+                      
+                      
+                  </div>
+                  <div class="gallery_column">
+              
+                      
+                    <div class="img_and_label" onclick="openModal();currentSlide('flourish_all')">
+                        <div class="sunnie_reacts" id="sunnie_cover" ></div>
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('sunnie_cover'),
+                                    path: './images/Flourish/1_awesome_v1.json',
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: "Sunnie Reacts - Awesome",
+                                });           
+                            </script>
+                        <div class="img_overlay">Flourish "Awesome Day" <p class="year">2024</p></div>
+                    </div>
+
+                    <div class="img_and_label" onclick="openModal();currentSlide('blackbox')">
+                        <video autoplay muted loop class="grid_video">
+                            <source src="images/misc_mograph/cube_v3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <div class="img_overlay">Black Box Media bumper<p class="year">2024</p></div>
+                      </div>
+
+                    <div class="img_and_label" onclick="openModal();currentSlide('juxtapose')">
+                        <video autoplay muted loop class="grid_video">
+                            <source src="images/misc_anim/type_squared_v1.mp4#t=20,32" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <div class="img_overlay">"JUXTAPOSE"<p class="year">2024</p></div>
+                    </div>
+              
+                      
+
+                     
+
+                      <div class="img_and_label" onclick="openModal();currentSlide('countdown')">
+                        <video autoplay muted loop class="grid_video">
+                            <source src="images/misc_mograph/izzy_countdown_v5_15s_720p.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <div class="img_overlay">Countdown<p class="year">2024</p></div>
+                    </div>
+              
+                  </div>
+                  <div class="gallery_column">
+                    
+                      
+                    <div class="img_and_label" onclick="openModal();currentSlide('spotify_canvas')">
+                        <img class="bluebird_skies" src="images/misc_anim/bluebird_skies_LR.gif">
+                        <div class="img_overlay">Spotify Canvas Animations <p class="year">2022</p></div>
+                    </div>
+
+                    <div class="img_and_label" onclick="openModal();currentSlide('bedtime_intro')">
+                        <video autoplay muted loop class="grid_video">
+                            <source src="images/misc_anim/draft_9_full_reworked.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <div class="img_overlay">Bedtime Heroes Introduction<p class="year">2023</p></div>
+                      </div>
+                        
+                        
+                    
+                    
+                    </div>
+                  </div>
+                  
+                  
+              </div>
+                
+            
+            
+
+
+
+
+            <!-- <div id="tab_titles">
+                
+                <div onClick="document.getElementById('HR_1').scrollIntoView();" id="flourish_tab_title_1" class="tab_title" >Flourish (2023-2024)</div>
+                <div onClick="document.getElementById('HR_2').scrollIntoView();" id="aof_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">AOFund (2022)</div>
+                <div onClick="document.getElementById('HR_3').scrollIntoView();" id="misc_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Misc. Projects</div>
+            </div>
+            
+                <div class="tab_body">
+                <div class="tab" id="posters_print_tab">
+
+
+                    
+                    
+                </div>
+            </div> -->
+
+
+            <!-- <img class="animated_divider" src="./images/HR_1.gif" id="HR_2">
+
+
+
+            <div id="tab_titles">
+                
+                <div onClick="document.getElementById('HR_1').scrollIntoView();" id="flourish_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Flourish (2023-2024)</div>
+                <div onClick="document.getElementById('HR_2').scrollIntoView();" id="aof_tab_title_1" class="tab_title" >AOFund (2022)</div>
+                <div onClick="document.getElementById('HR_3').scrollIntoView();" id="misc_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Misc. Projects</div>
+            </div>
+                <div class="tab_body">
+                <div class="tab" id="logos_tab">
+
+                    
+                    
+                    
+                    
+
+                </div>
+            </div> -->
+
+<!-- 
+            <img class="animated_divider" src="./images/HR_1.gif" id="HR_3">
+
+
+            <div id="tab_titles">
+                
+                <div onClick="document.getElementById('HR_1').scrollIntoView();" id="flourish_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Flourish (2023-2024)</div>
+                <div onClick="document.getElementById('HR_2').scrollIntoView();" id="aof_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">AOFund (2022)</div>
+                <div onClick="document.getElementById('HR_3').scrollIntoView();" id="misc_tab_title_1" class="tab_title" >Misc. Projects</div>
+            </div>
+
+            <div class="tab_body">
+                <div class="tab" id="misc_tab" >
+                    
+                </div>
+            </div> -->
+            
+            
+      
+        </main>
+        </div>
+
+        
+    </content>
+    
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    
+    </body>
+</html>

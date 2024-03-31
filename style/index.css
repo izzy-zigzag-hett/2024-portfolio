@@ -123,10 +123,10 @@ button.yellow-button {
     background: #ffd700;
 }
 button.green-button {
-    background: #90ee90;
+    background: rgb(144, 238, 144);
 }
 button.blue-button {
-    background: #6fc9e7;
+    background: rgb(111, 201, 231);
 }
 button.pink-button {
     background: #ffb6c1;
@@ -169,7 +169,7 @@ button.pink-button {
 .section_title {
     color: white;
     text-align: center;
-   
+    font-size: 2rem;
     padding: 1rem;
 }
 
@@ -208,6 +208,14 @@ button.pink-button {
     margin: 0;
     padding: 0;
     width: 100%;
+    position:fixed;
+    /* opacity: 50%; */
+    z-index:-2;
+
+}
+
+#home_menu:hover {
+    opacity: 1;
 }
 #menu_logo {
     position:absolute;

@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. | Motion Graphics</title>
+
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/project.css">
+    <link rel="stylesheet" href="./style/mograph.css">
+
+    
+
+    <!-- CONFIG -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Embedded HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="jquery.js"></script>  -->
+    <script> 
+    $(function(){
+      $("#flourish_tab").load("/mograph_html/flourish_mograph.html"); 
+    });
+    $(function(){
+      $("#aof_tab").load("/mograph_html/aof_mograph.html"); 
+    });
+    $(function(){
+      $("#misc_tab").load("/mograph_html/misc_mograph.html"); 
+    });
+    $(function(){
+      $("#home_menu").load("menu_1.html"); 
+    });
+    </script> 
+</head>
+    <body>
+        
+        
+        <content id="project_content"> 
+         <div id="non-nav-content">
+
+        
+        <header class="project_header">
+            <!-- <div id="header_bg" class="header_bg"></div> -->
+
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('header_bg'),
+                        path: './images/random_stars_2.json',
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: "stars",
+                    });           
+                </script>
+            <!-- <img id="logo_wiggley" src="./images/logo_rainbow_wiggling_3.gif"> -->
+            <div class="header_text">
+                
+                <br>
+                <br>
+                <h1 class="page_title">
+                    <span>&#128970;</span>Motion Graphics<span>&#128970;</span>
+                </h1>
+                <!-- <hr> -->
+                <br>
+                <p class="subtitle section_subtitle">
+                    From micro-interactions and templates to long-form animated story-telling, I can create a wide range of unique vector-based animations.
+                </p>
+            </div>
+            
+        </header>
+        
+        <!-- <hr class="divider"> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#flourish_button").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#HR_1").offset().top
+                    }, 2000);
+                });
+            });
+        </script> -->
+
+        <main>
+            <div class="section blue" id="internships_title">
+                <div class="figure_box">
+                    <div class="figure">
+                        <iframe class="youtube_iframe" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border: lightgray 2px solid;"></iframe>
+                    </div>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <div class="figure_text">
+                       <h2>
+                            Motion Design Reel
+                        </h2>
+                        <hr>
+                        <p class="subtitle">
+                            This short video provides an overview of what I'm capable of.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <h1 class="section_title">Internships:</h1>
+            <section class="project_grid" >
+                <div class="container yellow">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            Flourish <br>(2023-24)
+                        </h2>
+                        <p class="project_desc">
+                           <b>Visual Design Internship</b>
+                        </p>
+                        <button id="flourish_button" onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" class="yellow-button">
+                        <!-- <button id="flourish_button" class="yellow-button"> -->
+
+                            View case study
+                        </button>
+                    </div>
+                    <div class="cover_image">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
+                        <a  onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" >
+                            <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
+                            height: 15rem;" loop autoplay></dotlottie-player>
+                        </a>
+
+                        <!-- <a onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});"><div class="project_image" id="flourish_cover" background="#cceeff"></div></a>
+                        <script>
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('flourish_cover'),
+                                path: './images/Flourish/flourish_glowHeartbeat_1.json',
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                name: "Sunnie with beating heart",
+                            });           
+                        </script> -->
+                    </div>
+                    
+    
+                </div>
+                <div class="container green">
+                    <div class="project_text">
+                        <h2 class="project_title">
+                            AOFund <br> (2022)
+                        </h2>
+                        <p class="project_desc">
+                            <b>Animation Internship</b>
+                        </p>
+                        <button onClick="document.getElementById('HR_2').scrollIntoView();" class="green-button">
+                            View case study
+                        </button>
+                    </div>
+                    <div class="cover_image">
+                        <img onClick="document.getElementById('HR_2').scrollIntoView();" class="project_image" src="./images/AOFund/aof_template_1.gif" alt="Looping gif with colorful animation">
+                    </div>
+                </div>
+              
+                
+            </section>
+
+
+            <img class="animated_divider" src="./images/HR_1.gif" id="HR_1">
+
+            <div id="tab_titles">
+                
+                <div onClick="document.getElementById('HR_1').scrollIntoView();" id="flourish_tab_title_1" class="tab_title" >Flourish (2023-2024)</div>
+                <div onClick="document.getElementById('HR_2').scrollIntoView();" id="aof_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">AOFund (2022)</div>
+                <div onClick="document.getElementById('HR_3').scrollIntoView();" id="misc_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Misc. Projects</div>
+            </div>
+            
+                <div class="tab_body">
+                <div class="tab" id="flourish_tab" >
+                    
+                </div>
+            </div>
+
+
+            <img class="animated_divider" src="./images/HR_1.gif" id="HR_2">
+
+
+
+            <div id="tab_titles">
+                
+                <div onClick="document.getElementById('HR_1').scrollIntoView();" id="flourish_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Flourish (2023-2024)</div>
+                <div onClick="document.getElementById('HR_2').scrollIntoView();" id="aof_tab_title_1" class="tab_title" >AOFund (2022)</div>
+                <div onClick="document.getElementById('HR_3').scrollIntoView();" id="misc_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Misc. Projects</div>
+            </div>
+                <div class="tab_body">
+                <div class="tab" id="aof_tab" >
+                    
+                </div>
+            </div>
+
+
+            <img class="animated_divider" src="./images/HR_1.gif" id="HR_3">
+
+
+            <div id="tab_titles">
+                
+                <div onClick="document.getElementById('HR_1').scrollIntoView();" id="flourish_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">Flourish (2023-2024)</div>
+                <div onClick="document.getElementById('HR_2').scrollIntoView();" id="aof_tab_title_1" class="tab_title" style="background: rgba(209, 138, 244,0.7);">AOFund (2022)</div>
+                <div onClick="document.getElementById('HR_3').scrollIntoView();" id="misc_tab_title_1" class="tab_title" >Misc. Projects</div>
+            </div>
+
+            <div class="tab_body">
+                <div class="tab" id="misc_tab" >
+                    
+                </div>
+            </div>
+            
+            
+        <footer>
+        Copyright Izzy Hettmansperger 2024
+        </footer>       
+        </main>
+        </div>
+        <!-- <div id="left_side_bar">
+            <div id="menu_organizer">
+                <nav>
+                    <a href="#p1" class="nav_link">
+                        <h4>
+                            1. Flourish (2023)
+                        </h4>
+                    </a>
+                    <a href="#p2" class="nav_link"><h4>
+                        2. AOFund (2022)
+                    </h4></a>
+                    <a href="#p3" class="nav_link"><h4>
+                        3. Additional Mograph
+                    </h4></a>
+                
+                </nav> 
+            </div>
+                       
+        </div> -->
+        
+    </content>
+    
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    
+    </body>
+</html>
