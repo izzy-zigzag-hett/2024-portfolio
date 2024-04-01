@@ -34,9 +34,20 @@
     $(function(){
       $("#home_content").load("home-content.html"); 
     });
-    $(function(){
-      $("#home_menu").load("menu_1.html"); 
-    });
+    $(document).ready(function() {
+        hide_fadein();
+    }); 
+
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+    const hide_fadein = async () => {
+        await delay(1000);
+        document.getElementById("fadein").classList.add('fade_in');
+        
+        };
+    
+    // $(function(){
+    //   $("#home_menu").load("menu_1.html"); 
+    // });
    
 
     </script> 
@@ -46,6 +57,11 @@
     <body>
         <a id="top_of_page"></a>
 
+        <div id="fadein" style="display:flex;justify-content: center; align-items: center;">
+            <img src="images/4stars.png" width="200px" height="180px" style="max-width: 90vw; max-height: calc(90vw * 9 / 10);">
+        </div>
+        
+
         
         <div id="back_to_top">
             <div id="scroll-top-button" onClick="document.getElementById('top_of_page').scrollIntoView();">
@@ -54,6 +70,27 @@
             </div>
         </div>
         <menu id="home_menu">
+            <a href="#top_of_page"><img id="menu_logo" src="./images/ih_logo_navy.svg"></a>
+            <a class="menu_link" onClick="document.getElementById('mograph_content').scrollIntoView({behavior: 'smooth'});"><div class="menubar bar bluebar">
+                <p class="menu_header">
+                    Motion Graphics
+                </p>
+            </div></a>
+            <a class="menu_link" onClick="document.getElementById('graphic_design_content').scrollIntoView({behavior:'smooth'});"><div class="menubar bar greenbar">
+                <p class="menu_header">
+                    Graphic Design
+                </p>
+            </div></a>
+            <a class="menu_link" onClick="document.getElementById('process_content').scrollIntoView({behavior: 'smooth'});"><div class="menubar bar yellowbar">
+                <p class="menu_header">
+                    Storyboards & Process
+                </p>
+            </div></a>
+            <a class="menu_link" onClick="document.getElementById('about_and_contact').scrollIntoView({behavior: 'smooth'});"><div class="menubar bar pinkbar">
+                <p class="menu_header">
+                    About & Contact
+                </p>
+            </div></a>
         </menu>
         
         
@@ -221,6 +258,6 @@
         </footer>
         
     </main>
-    <div id="fadein"></div>
+    
     </body>
 </html>
