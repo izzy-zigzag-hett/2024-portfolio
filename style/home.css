@@ -3,6 +3,9 @@
     padding: 0.5rem 0rem;
     
 }
+
+
+
 #wave_gif {
     position: absolute;
     bottom: 0;
@@ -116,7 +119,7 @@
     margin:auto;
     /* width: calc(100vw-2rem); */
     display: grid;
-    grid-template-columns: 32vw 32vw 32vw;
+    grid-template-columns: calc(32vw - 1rem) calc(32vw - 1rem) calc(32vw - 1rem);
     grid-gap: 1rem;
     
   }
@@ -174,6 +177,8 @@
     /* filter:drop-shadow(0 0 5px rgb(161, 130, 214)); */
     border: 2px solid #d18af4;
   }
+
+
   .img_and_label {
     margin-bottom: 1rem;
   }
@@ -192,6 +197,16 @@
   .video_clip {
     max-height: 90vh;
     border: lightgray 1px solid;
+  }
+
+  .addit_images {
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 
 
@@ -218,6 +233,11 @@
         width: 100%;
         margin: auto;
         margin-top: 0;
+    }
+    .image_gallery {
+        width: 90%;
+        grid-template-columns: 100%;
+        margin: 0;
     }
 
  }

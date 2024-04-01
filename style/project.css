@@ -32,6 +32,10 @@ h3 {
     font-size: 1.5rem;
 
 }
+
+h3.company_name {
+    padding:0;
+}
 p {
     padding: 0rem 1rem;
 }
@@ -529,6 +533,11 @@ p.subtitle {
 #bh_storyboards {
     flex-direction: row;
     width: 80%;
+}
+
+.hover_cover {
+    object-fit: contain;
+    object-position: center;
 }
 /* #sunnie_halves_section {
     height: 300px;

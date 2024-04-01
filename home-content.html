@@ -6,6 +6,7 @@
     <link href="./style/lightbox_v2.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="scripts/lightbox_v2.js"></script>
+    <!-- <script type="text/javascript" src="scripts/slideshow.js"></script> -->
 
     <!-- Embedded HTML -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -22,6 +23,9 @@
     });
     $(function(){
       $("#flourish_section").load("mograph_html/flourish_mograph.html"); 
+    });
+    $(function(){
+      $("#process_content").load("process_v2.html"); 
     });
 
     </script> 
@@ -133,14 +137,14 @@
     <h2 id="modal_header">Graphic Design</h2>
 
     <!-- Caption text -->
-    <div class="caption-container">
+    <!-- <div class="caption-container">
         <p id="caption"></p>
-      </div>
+      </div> -->
 
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
         
-
+      <br>
 
         <!-- GRAPHIC DESIGN--------------------------------------------------------------- -->
         <div class="mySlides GD" id="millipedes">
@@ -250,12 +254,98 @@
 
       <div class="mySlides anim" id="bedtime_intro">
         <!-- <div class="numbertext">2 / 3</div> -->
-        <video controls autoplay muted class="video_clip">
+        <!-- <video controls autoplay muted class="video_clip">
             <source src="images/misc_anim/draft_9_full_reworked.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video> -->
+        <iframe class="modal_iframe" src="https://www.youtube.com/embed/ROHLQzDILSc?si=Y1Ltsrr33wSKpEWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
       </div>
 
+
+<!-- PROCESS------------------------------------------------------------------------------------------------ -->
+
+
+        <div class="mySlides process" id="recipe_process">
+          <img  src="images/misc_anim/xander_720.gif">
+          <div class="addit_images">
+              <img  src="images/misc_anim/xander_process_1-10.png">
+          </div>
+          
+        </div>
+
+        <div class="mySlides process" id="bh_process">
+
+          <h3 style="color:white;">
+            <i>Bedtime Heroes</i> Introduction, 2023
+          </h3>
+          <iframe class="modal_iframe" src="https://www.youtube.com/embed/ROHLQzDILSc?si=Y1Ltsrr33wSKpEWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <br>
+          <h3 style="color:white;">
+            Timed storyboard video:
+          </h3>
+          <iframe class="modal_iframe" src="https://www.youtube.com/embed/CRyQCfZs7OE?si=u1teCf_fPwjei-wh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          <br>
+          <h3 style="color:white;">
+            Storyboards:
+          </h3>
+          <div class="addit_images">
+
+                <img src="images/misc_mograph/BH_storyboards_1.png" style="width:100%">
+
+                <img src="images/misc_mograph/BH_storyboards_2.png" style="width:100%">
+            </div>
+
+        </div>
+
+        <div class="mySlides process" id="emma_process">
+          <img class="bluebird_skies" src="images/misc_anim/bluebird_skies_LR.gif">
+          <div class="addit_images">
+              <img class="bluebird_skies" src="images/misc_anim/emma_process_1.png">
+          </div>
+          
+        </div>
+
+        <div class="mySlides process" id="xander_process">
+          <img  src="images/misc_anim/xander_720.gif">
+          <div class="addit_images">
+              <img  src="images/misc_anim/xander_process_1-10.png">
+          </div>
+          
+        </div>
+
+        <div class="mySlides process" id="jackson_aof_process">
+          <h3>
+            <i>Who is Born Other</i> - Jackson's Story<br>
+            Created for AOF, 2022
+          </h3>
+          <video controls autoplay muted class="video_clip">
+            <source src="images/AOFund/jackson_scene1-7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <br>
+          <h3 style="color:white;">
+            Color storyboards for this project:
+          </h3>
+          <div class="addit_images">
+              <img  src="images/AOFund/storyboards/CS_1.png">
+              <img  src="images/AOFund/storyboards/CS_2.png">
+              <img  src="images/AOFund/storyboards/CS_3.png">
+          </div>
+          <br>
+          <h3 style="color:white;">
+            Unfortunately, due to complications with the client, the project was not completed. Here are storyboards for an additional part of the video, where Jackson discusses his relationship to AOF:
+          </h3>
+          <div class="addit_images">
+              <img  src="images/AOFund/storyboards/jackson_trustingaof_1_cs.png">
+              <img  src="images/AOFund/storyboards/jackson_trustingaof_2_cs.png">
+              <img  src="images/AOFund/storyboards/jackson_trustingaof_3_cs.png">
+          </div>
+          
+        </div>
+
+        
 
       <!-- number_text -->
       <div class="numbertext"></div>  

@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <title>Izzy H. | Graphic Design</title>
+
+
+    <!-- Embedded HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+
+        $(function(){
+          $("#home_menu").load("menu_1.html"); 
+        });
+        $(function(){
+          $("#logos_tab").load("gd_html/gd_logos.html"); 
+        });
+        $(function(){
+          $("#posters_print_tab").load("gd_html/gd_posters_print.html"); 
+        });
+    </script> 
+
+</head>
+    <body>
+        
+   
+
+        <content> 
+         <div>
+
+        
+          <header class="project_header">
+            
+            <!-- <img id="logo_wiggley" src="./images/logo_rainbow_wiggling_3.gif"> -->
+            <div class="header_text">
+                
+                <br>
+                <br>
+                <h1 class="page_title">
+                    <span style="color:#ffd700">&#128970;   </span>Process Work<span style="color:#ffd700">   &#128970;</span>
+                </h1>
+                <!-- <hr> -->
+                <br>
+                <p class="subtitle section_subtitle">
+                    As an illustrator, I know the value of breaking a project into sequential parts. I have real-world experience creating and showing process work for internships, freelance, and other collaborative projects.
+            </div>
+            
+        </header>
+        
+        <br>
+
+        <main id="process_main">
+            
+            <!-- <h1 class="section_title">Various Projects:</h1> -->
+            <section class="grid_section">
+                <h1 class="section_title">Click for more info:</h1>
+                <div class="image_gallery">
+                  <div class="gallery_column">
+                    <div class="img_and_label" onclick="openModal(this);currentSlide('jackson_aof_process')">
+                        <img  src="images/AOFund/storyboards/CS_1.png">
+                        <div class="img_overlay">
+                          
+                          <!-- AOF - "Who is Born Other?" -->
+                          
+                          <img class="hover_cover" src="images/AOFund/jackson_preview.gif">
+                        </div>
+                          
+                          
+
+                        
+                    </div>
+                    
+                    
+                    <div class="img_and_label" onclick="openModal(this);currentSlide('recipe_process')">
+                      <img  src="images/AOFund/storyboards/recipe_thumbnails.png">
+                      <div class="img_overlay">
+                        <!-- AOF - Recipe Animation -->
+                        <img class="hover_cover" src="images/AOFund/recipe_preview.gif">
+                      </div>
+                      
+                  </div>
+                      
+                      
+                      
+                      
+                  </div>
+                  <div class="gallery_column">
+              
+                      
+                    <div class="img_and_label" onclick="openModal(this);currentSlide('emma_process')">
+                        <img  src="images/misc_anim/emma_process_1.png">
+                        <div class="img_overlay">
+                          <!-- "Suburban Dreaming" -->
+                          <img class="hover_cover" src="images/misc_anim/bluebird_skies_LR.gif">
+                        </div>
+                    </div>
+              
+                      <div class="img_and_label" onclick="openModal(this);currentSlide('xander_process')">
+                          <img src="images/misc_anim/xander_process_1-10.png">
+                          <div class="img_overlay">
+                            <!-- "Hope is a Prison" -->
+                            <img class="hover_cover" src="images/misc_anim/xander_720.gif">
+                          </div>
+                      </div>
+
+                      
+              
+                  </div>
+                  <div class="gallery_column">
+                    
+                      
+                    
+
+                    <div class="img_and_label" onclick="openModal(this);currentSlide('guerreras')">
+                      <img  src="images/AOFund/storyboards/01.jpg">
+                      <div class="img_overlay">
+                        
+                        <img src="images/misc_anim/aof_01.gif">
+                      </div>
+                  </div>
+
+                  <div class="img_and_label" onclick="openModal(this);currentSlide('bh_process')">
+
+                    <img src="images/misc_mograph/BH_storyboards_1.png">
+                    
+                      <div class="img_overlay">
+                        <video autoplay muted loop class="grid_video">
+                          <source src="images/misc_anim/BH_intro_preview.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+
+                      </div>
+                  </div>
+                    
+                    
+                    </div>
+                  </div>
+                  
+                  
+              </div>
+      
+        </main>
+        </div>
+
+        
+    </content>
+    
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    
+    </body>
+</html>

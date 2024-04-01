@@ -3,6 +3,19 @@ var videos = document.getElementsByClassName("video_clip");
 var grid_videos = document.getElementsByClassName("grid_video");
 var grid_items = document.getElementsByClassName("img_and_label");
 
+var slides = document.getElementsByClassName("mySlides");
+
+var scrollYvalue = 0;
+
+var slideIndex = 1;
+var currCaption = "";
+
+var first_slide;
+
+showSlides(slideIndex);
+
+var curr_category = "anim";
+
 function stopAllVideos() {
   // console.log("attempted to pause!");
   for (i = 0; i < videos.length; i++) {
@@ -10,8 +23,9 @@ function stopAllVideos() {
     videos[i].currentTime = 0;
     // video.pause();
     // video.currentTime = 0;
-    
   }
+  // document.getElementById("home_main").scrollTo(0,scrollYvalue);
+
 }
 
 function hideGridItems() {
@@ -27,56 +41,74 @@ function showGridItems() {
     grid_items[i].style.display = "block";
     
   }
+
+  slides[slideIndex - 1].scrollIntoView();
 }
 
-function pauseGridVideos() {
-  // console.log("attempted to pause!");
-  for (i = 0; i < grid_videos.length; i++) {
-    grid_videos[i].pause();
+// function pauseGridVideos() {
+//   // console.log("attempted to pause!");
+//   for (i = 0; i < grid_videos.length; i++) {
+//     grid_videos[i].pause();
     
-  }
-}
-function playGridVideos() {
-  // console.log("attempted to pause!");
-  for (i = 0; i < grid_videos.length; i++) {
-    grid_videos[i].play();
+//   }
+// }
+// function playGridVideos() {
+//   // console.log("attempted to pause!");
+//   for (i = 0; i < grid_videos.length; i++) {
+//     grid_videos[i].play();
     
-  }
-}
+//   }
+// }
 
-var slides = document.getElementsByClassName("mySlides");
-var scrollY = 0;
+
 
 // Open the Modal
-function openModal() {
-  scrollY = document.getElementById("home_main").scrollHeight;
+function openModal(this_slide) {
+  // scrollYvalue = document.getElementById("home_main").scrollHeight;
   document.getElementById("myModal").style.display = "block";
   document.body.style.overflowY = "hidden";
-
+  // document.body.scrollTop = 0;
 
   // pauseGridVideos();
   hideGridItems();
   // console.log("orig scroll h: "+ scrollHeight)
   // scrollHeight = document.body.scrollTop;
-  // console.log("new scroll h: "+ scrollY)
+  // console.log("new scroll h: "+ scrollYvalue)
+
+  first_slide=this_slide;
 }
 
 // Close the Modal
 function closeModal() {
+  document.body.style.overflowY = "scroll";
   document.getElementById("myModal").style.display = "none";
   stopAllVideos();
   // playGridVideos();
   showGridItems();
-  console.log("attempted scroll h: "+ scrollY)
-  document.getElementById("home_main").scrollTop = scrollY;
-  document.body.style.overflowY = "scroll";
+  // console.log("attempted scroll h: "+ scrollYvalue)
 
+  // console.log(scrollYvalue)
+  
+  // if( curr_category == "gd") {
+  //   document.getElementById('gd_main').scrollIntoView();
+  // }
+  // else if( curr_category == "anim") {
+  //   document.getElementById('HR_1').scrollIntoView();
+  // }
+  // else if( curr_category == "anim") {
+  //   document.getElementById('process_main').scrollIntoView();
+  // }
+  // else {
+  //   document.getElementById('top_of_page').scrollIntoView();
+  // }
+
+
+  // console.log("actualScrollH: "+ document.body.scrollTop)
+  document.getElementById('myModal').scrollTop = 0;
 
 }
 
-var slideIndex = 1;
-var currCaption = "";
-showSlides(slideIndex);
+
 
 // Next/previous controls
 function plusSlides(n) {
@@ -119,20 +151,29 @@ function checkCategory(n) {
   var div_class = div_attrs.getNamedItem("class").value;
   // console.log(currSlide)
   const classList = div_class.split(" ");
-  captionText.innerHTML = currSlide.id;
+  // captionText.innerHTML = currSlide.id;
   if (classList.includes("GD")) {
     modalHeader.innerHTML = "Graphic Design"
     // modalHeader.style.backgroundImage = "radial-gradient(rgba(144, 238, 144,1), rgba(144, 238, 144,0),rgba(144, 238, 144,0))";
     modalHeader.style.color = "rgba(144, 238, 144,1)";
+    curr_category = "gd";
   }
   else if (classList.includes("anim")) {
     modalHeader.innerHTML = "Animation"
     // modalHeader.style.backgroundImage = "radial-gradient(rgba(111, 201, 231,1), rgba(111, 201, 231,0),rgba(111, 201, 231,0) )";
     modalHeader.style.color = "rgba(111, 201, 231,1)";
+    curr_category = "anim";
+
 
   }
+  else if (classList.includes("process")) {
+    modalHeader.innerHTML = "Process"
+    // modalHeader.style.backgroundImage = "radial-gradient(rgba(111, 201, 231,1), rgba(111, 201, 231,0),rgba(111, 201, 231,0) )";
+    modalHeader.style.color = "#ffd700";
+    curr_category = "process";
+  }
   else {
-    modalHeader.innerHTML = "OOPS"
+    console.log("Slide has no category")
   }
   
 }
