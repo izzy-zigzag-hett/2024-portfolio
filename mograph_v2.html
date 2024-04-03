@@ -49,10 +49,9 @@
         <br>
 
         <main>
-
             <h1 class="section_title">Internships:</h1>
             <section class="project_grid" >
-                <div class="container yellow">
+                <div class="container blue">
                     <div class="project_text">
                         <h2 class="project_title">
                             INTERNSHIP '23-'24
@@ -63,7 +62,7 @@
                         <p class="project_desc">
                            Visual Design Intern
                         </p>
-                        <button id="flourish_button" onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" class="yellow-button">
+                        <button id="flourish_button" onclick="openModal(this);currentSlide('flourish_all')" class="blue-button">
                         <!-- <button id="flourish_button" class="yellow-button"> -->
 
                             View case study
@@ -72,7 +71,7 @@
                     <div class="cover_image">
                         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     
-                        <a  onClick="document.getElementById('HR_1').scrollIntoView({behavior: 'smooth'});" >
+                        <a  onclick="openModal(this);currentSlide('flourish_all')" >
                             <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
                             height: 15rem;" loop autoplay></dotlottie-player>
                         </a>
@@ -92,7 +91,7 @@
                     
     
                 </div>
-                <div class="container green">
+                <div class="container blue">
                     <div class="project_text">
                         <h2 class="project_title">
                             INTERNSHIP '22
@@ -103,18 +102,19 @@
                         <p class="project_desc" >
                             Animation Intern
                         </p>
-                        <button onClick="document.getElementById('HR_2').scrollIntoView();" class="green-button">
+                        <button onclick="openModal(this);currentSlide('AOF_all')" class="blue-button">
                             View case study
                         </button>
                     </div>
                     <div class="cover_image">
-                        <img onClick="document.getElementById('HR_2').scrollIntoView();" class="project_image" src="./images/AOFund/aof_template_1.gif" alt="Looping gif with colorful animation">
+                        <img onclick="openModal(this);currentSlide('AOF_all')" class="project_image" src="./images/AOFund/aof_template_1.gif" alt="Looping gif with colorful animation">
                     </div>
                 </div>
               
                 
             </section>
-            <img class="animated_divider" src="./images/HR_1.gif" id="HR_1">
+            
+            <!-- <img class="animated_divider" src="./images/HR_1.gif" id="HR_1"> -->
             
             <!-- <h1 class="section_title">Various Projects:</h1> -->
             <section class="grid_section">
@@ -124,7 +124,7 @@
 
                     <div class="img_and_label" onclick="openModal(this);currentSlide('guerreras')">
                         <img src="images/misc_anim/aof_01.gif">
-                        <div class="img_overlay">AOF La Geurrera's Kitchen (for AOF)<p class="year">2022</p>
+                        <div class="img_overlay">AOF "La Geurrera's Kitchen"<p class="year">2022</p>
                     </div></div>
 
                       <div class="img_and_label" onclick="openModal(this);currentSlide('AOF_templates')">

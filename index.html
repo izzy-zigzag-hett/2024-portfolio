@@ -31,6 +31,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <script src="jquery.js"></script>  -->
     <script> 
+
+    
     $(function(){
       $("#home_content").load("home-content.html"); 
     });
@@ -40,9 +42,14 @@
 
     const delay = ms => new Promise(res => setTimeout(res, ms));
     const hide_fadein = async () => {
+        let imgsrc = './images/forwards_and_back_TRANS_4.gif';
+        
         await delay(1000);
         document.getElementById("fadein").classList.add('fade_in');
         
+        
+        document.getElementById("name_gif").src = imgsrc;
+
         };
     
     // $(function(){
@@ -57,8 +64,9 @@
     <body>
         <a id="top_of_page"></a>
 
-        <div id="fadein" style="display:flex;justify-content: center; align-items: center;">
+        <div id="fadein" style="display:flex;justify-content: center; align-items: center; flex-direction: column;">
             <img src="images/4stars.png" width="200px" height="180px" style="max-width: 90vw; max-height: calc(90vw * 9 / 10);">
+            <!-- <h3 style="color:white; font-family: sans-serif; padding: 0.5rem">Loading...</h3> -->
         </div>
         
 
@@ -146,7 +154,7 @@
                 
                 <h1 id="hook">
                     
-                    How can I help you create something amazing?
+                    <span style="font-weight: normal;">How can I help you create something amazing?</span>
                     <button id="contact-button" onClick="document.getElementById('about_and_contact').scrollIntoView();">Contact me!</button>
                 </h1>
             </div>
@@ -161,8 +169,32 @@
         <div class="bar yellowbar"></div>
         <div class="bar greenbar"></div>
         <div class="bar bluebar"></div> -->
+        <div class="section purple" id="internships_title" style="background: none; color:white; filter:none; border: none">
+            <div class="figure_box">
+                <div class="figure">
+                    <iframe class="youtube_iframe" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen &vq=hd720 style="border: lightgray 2px solid;"></iframe>
+                </div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                <div class="figure_text">
+                   <h2>
+                        Motion Reel
+                    </h2>
+                    <hr>
+                    <p class="subtitle">
+                        This short video provides an overview of what I'm capable of in the realm of motion graphics and 2d animation.
+                    </p>
+                    <p class="subtitle">
+                        Video duration - 1:20
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        
+
         <h1 class="section_title" style="margin-top: 1rem;">
-            My skills:
+            Skills:
         </h1>
         <section class="project_grid">
             <div class="container yellow skill">
@@ -173,14 +205,14 @@
                     <p class="project_desc">
                         A variety of animations designed to catch your eye, guide you through user experiences, and tell stories.
                     </p>
-                    <button onClick="document.getElementById('mograph_content').scrollIntoView();" class="yellow-button">
-                        View Motion Portfolio
+                    <button onClick="document.getElementById('mograph_content').scrollIntoView({behavior:'smooth'});" class="yellow-button">
+                        View Motion Portfolio &#x2193;
                     </button>
                 </div>
                 <div class="project_cover">
                     
 
-                    <a onClick="document.getElementById('mograph_content').scrollIntoView();" >
+                    <a onClick="document.getElementById('mograph_content').scrollIntoView({behavior:'smooth'});" >
                         <dotlottie-player class="project_image" src="https://lottie.host/bd891270-06ba-4d3c-b307-df8fa6dba8ec/AMEWRxsBiU.json" background="#cceeff" speed="1" style="width: 15rem;
                         height: 15rem;" loop autoplay></dotlottie-player>
                     </a>
@@ -197,12 +229,12 @@
                     </h2>
                     <p class="project_desc">
                         Anything you need in the realm of graphic design and illustration, I can make it, including vector graphics, typographic layouts, logos, and more.</p>
-                    <button onClick="document.getElementById('graphic_design_content').scrollIntoView();" class="green-button">
-                        View Design Portfolio
+                    <button onClick="document.getElementById('graphic_design_content').scrollIntoView({behavior:'smooth'});" class="green-button">
+                        View Design Portfolio &#x2193;
                     </button>
                 </div>
                 <div class="project_cover">
-                    <a onClick="document.getElementById('graphic_design_content').scrollIntoView();"><img class="project_image" src="./images/graphic_design/greenhouse/greenhouse-leafhands.png" alt="Iterative App Design"></a>
+                    <a onClick="document.getElementById('graphic_design_content').scrollIntoView({behavior:'smooth'});"><img class="project_image" src="./images/graphic_design/greenhouse/greenhouse-leafhands.png" alt="Iterative App Design"></a>
                 </div>
             </div>
             <div class="container blue skill">
@@ -216,38 +248,18 @@
                         <!-- Playful animations that center storytelling, created for enjoyment and satisfaction. -->
                         This skill is critical for any creative project, big or small. I have plenty of experience with making visual plans, which make collaboration with team members even easier.
                     </p>
-                    <button onclick="window.location.href='animation-3d.html';" class="blue-button">
-                        View Process Work
+                    <button onClick="document.getElementById('process_content').scrollIntoView({behavior:'smooth'});" class="blue-button">
+                        View Process Work &#x2193;
                     </button>
                 </div>
                 <div class="project_cover">
-                    <a href="animation-3d.html"><img class="project_image" src="./images/animation-3d/tigertruck-3d.gif" alt="Looping gif with colorful animation"></a>
+                    <a onClick="document.getElementById('process_content').scrollIntoView({behavior:'smooth'});"><img class="project_image" src="./images/animation-3d/tigertruck-3d.gif" alt="Looping gif with colorful animation"></a>
                 </div>
             </div>
             
         </section>
 
-        <div class="section pink" id="internships_title">
-            <div class="figure_box">
-                <div class="figure">
-                    <iframe class="youtube_iframe" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen &vq=hd720 style="border: lightgray 2px solid;"></iframe>
-                </div>
-                <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                <div class="figure_text">
-                   <h2>
-                        My Reel
-                    </h2>
-                    <hr>
-                    <p class="subtitle">
-                        This short video provides an overview of what I'm capable of (in animation and motion graphics).
-                    </p>
-                    <p class="subtitle">
-                        Video duration - 1:20
-                    </p>
-
-                </div>
-            </div>
-        </div>
+        
         
         <section id="home_content"></section>
 

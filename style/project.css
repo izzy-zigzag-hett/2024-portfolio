@@ -144,6 +144,9 @@ nav {
 .yellow h2 {
     color: rgb(214, 167, 49);
 }
+.purple h2 {
+    color: rgb(209, 138, 244);
+}
 .pink hr {
     background-color: rgb(210, 111, 126);
 }
@@ -155,6 +158,9 @@ nav {
 }
 .yellow hr {
     background-color: rgb(214, 167, 49);
+}
+.purple hr {
+    background-color: rgb(209, 138, 244);
 }
 
 

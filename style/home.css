@@ -210,6 +210,8 @@
   }
 
 
+
+
 @media (max-width: 815px) {
 
     .home_header {
@@ -225,6 +227,10 @@
     }
     h1 {
         font-size: 1.5rem;
+    }
+    .nice_list {
+        font-size: 1.2rem;
+
     }
     #title {
         font-size: 2rem;

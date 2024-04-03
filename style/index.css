@@ -123,6 +123,10 @@ footer {
     border: 0.2rem lightpink solid;
     filter:drop-shadow(5px 5px 0 lightpink);
 }
+.purple {
+    border: 0.2rem #d18af4 solid;
+    filter:drop-shadow(5px 5px 0 #d18af4);
+}
 button.yellow-button {
     background: #ffd700;
 }
@@ -245,7 +249,7 @@ button.pink-button {
     color: white;
 }
 .nice_list {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     opacity: 0.5;
 }
