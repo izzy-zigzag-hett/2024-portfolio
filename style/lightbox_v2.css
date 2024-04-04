@@ -35,7 +35,18 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 1);
+    overflow-x: hidden;
+    overscroll-behavior: contain;
     /* text-align: center; */
+  }
+
+  .mySlides p.text {
+    font-size: 1.2rem;
+    color: white;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    
   }
   
   /* Modal Content */

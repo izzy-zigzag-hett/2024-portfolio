@@ -1,36 +1,20 @@
-// List of embedded videos in Modal content
+// pause videos
 var videos = document.getElementsByClassName("video_clip");
-
-// List of embedded videos on Homepage
 var grid_videos = document.getElementsByClassName("grid_video");
-
-// List of images and videos from home page
 var grid_items = document.getElementsByClassName("img_and_label");
 
-
-// List of DIV elements
 var slides = document.getElementsByClassName("mySlides");
-
 
 var scrollYvalue = 0;
 
-// Current slide index
 var slideIndex = 1;
-
-// Current caption
 var currCaption = "";
 
-// Current category of slide
-var curr_category = "anim";
-
-// Slide clicked when modal is opened
 var first_slide;
 
 
+var curr_category = "anim";
 
-
-
-// Stop embedded videos from playing when closed ----------------------------------------------------------------------
 function stopAllVideos() {
   // console.log("attempted to pause!");
   for (i = 0; i < videos.length; i++) {
@@ -43,37 +27,45 @@ function stopAllVideos() {
 
 }
 
-// Hide homepage items to save memory----------------------------------------------------------------------
 function hideGridItems() {
   // console.log("attempted to pause!");
   for (i = 0; i < grid_items.length; i++) {
-    grid_items[i].style.visibility = "hidden";
+    grid_items[i].style.display = "none";
   
   }
 }
-
-// SHow homepage items again----------------------------------------------------------------------
 function showGridItems() {
   // console.log("attempted to pause!");
   for (i = 0; i < grid_items.length; i++) {
-    grid_items[i].style.visibility = "visible";
+    grid_items[i].style.display = "block";
     
   }
 
-  // slides[slideIndex - 1].scrollIntoView();
+  slides[slideIndex - 1].scrollIntoView();
 }
 
+// function pauseGridVideos() {
+//   // console.log("attempted to pause!");
+//   for (i = 0; i < grid_videos.length; i++) {
+//     grid_videos[i].pause();
+    
+//   }
+// }
+// function playGridVideos() {
+//   // console.log("attempted to pause!");
+//   for (i = 0; i < grid_videos.length; i++) {
+//     grid_videos[i].play();
+    
+//   }
+// }
 
 
-// Open the Modal----------------------------------------------------------------------
+
+// Open the Modal
 function openModal(this_slide) {
-  document.getElementById('myModal').scrollTop = 0;
-  // console.log(document.getElementById('home_main').scrollTop)
-
-  event.stopPropagation();
+  alert(document.getElementById('home_main').scrollTop)
   // scrollYvalue = document.getElementById("home_main").scrollHeight;
   document.getElementById("myModal").style.display = "block";
-
   document.body.style.overflowY = "hidden";
   // document.body.scrollTop = 0;
 
@@ -86,7 +78,7 @@ function openModal(this_slide) {
   first_slide=this_slide;
 }
 
-// Close the Modal----------------------------------------------------------------------
+// Close the Modal
 function closeModal() {
   document.body.style.overflowY = "scroll";
   document.getElementById("myModal").style.display = "none";
@@ -112,26 +104,22 @@ function closeModal() {
 
 
   // console.log("actualScrollH: "+ document.body.scrollTop)
-  // document.getElementById('myModal').scrollTop = 0;
+  document.getElementById('myModal').scrollTop = 0;
 
 }
 
 
 
-// Next/previous controls----------------------------------------------------------------------
+// Next/previous controls
 function plusSlides(n) {
 
   showSlides(slideIndex += n);
-  document.getElementById('myModal').scrollTop = 0;
-
 
 }
 
 
 function currentSlide(slide_id) {
-  document.getElementById('myModal').scrollTop = 0;
-
-  // console.log(slides)
+  console.log(slides)
   for (var i=0;  i<slides.length; i++) {
 
     
@@ -146,7 +134,6 @@ function currentSlide(slide_id) {
   stopAllVideos();
 }
 
-// Change Modal Header based on category----------------------------------------------------------------------
 function checkCategory(n) {
   var modalHeader = document.getElementById("modal_header");
 
@@ -196,8 +183,6 @@ function checkCategory(n) {
   
 }
 
-
-// Displays Modal content----------------------------------------------------------------------
 function showSlides(n) {
   
   var i;

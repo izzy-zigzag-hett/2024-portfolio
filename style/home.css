@@ -104,6 +104,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 .row_section {
     display:flex;
@@ -209,7 +210,9 @@
     gap: 1rem;
   }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 @media (max-width: 815px) {
@@ -249,10 +252,10 @@
  }
 @media (min-width: 768px) and (max-width: 991px) { 
 
-    .project_grid {
+    /* .project_grid {
 
-        grid-template-columns: 90vw;
-    }
+        grid-template-columns: 90%;
+    } */
     #name_gif {
         width: 90%;
         margin: auto;

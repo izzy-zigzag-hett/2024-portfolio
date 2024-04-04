@@ -63,11 +63,11 @@
         
         document.getElementById("name_gif").src = imgsrc;
 
+        await delay(2000);
+        document.getElementById("loading_text").style.visibility = "visible";
+
         };
     
-    // $(function(){
-    //   $("#home_menu").load("menu_1.html"); 
-    // });
    
 
     </script> 
@@ -77,8 +77,11 @@
     <body>
         <a id="top_of_page"></a>
 
-        <div id="fadein" style="display:flex;justify-content: center; align-items: center; flex-direction: column;">
+        <div id="fadein">
             <img src="images/4stars.png" width="200px" height="180px" style="max-width: 90vw; max-height: calc(90vw * 9 / 10);">
+            <p id="loading_text" style="color:white; visibility: hidden;">
+                Loading...
+            </p>
             <!-- <h3 style="color:white; font-family: sans-serif; padding: 0.5rem">Loading...</h3> -->
         </div>
         
@@ -92,12 +95,16 @@
         </div>
         <menu id="home_menu">
             <a href="#top_of_page"><img id="menu_logo" src="./images/icons/ih_balloon_1.svg"></a>
-            <a class="menu_link" onClick="document.getElementById('mograph_content').scrollIntoView({behavior: 'smooth'});"><div class="menubar bar bluebar">
+            <!-- <a class="menu_link" onClick="document.getElementById('mograph_content').scrollIntoView({behavior: 'smooth'});"><div class="menubar bar bluebar"> -->
+            <a class="menu_link" href="#mograph_content"><div class="menubar bar bluebar">
+
                 <p class="menu_header">
-                    Motion Graphics
+                    Motion and Animation
                 </p>
             </div></a>
-            <a class="menu_link" onClick="document.getElementById('graphic_design_content').scrollIntoView({behavior:'smooth'});"><div class="menubar bar greenbar">
+            <!-- <a class="menu_link" onClick="document.getElementById('graphic_design_content').scrollIntoView({behavior:'smooth'});"><div class="menubar bar greenbar"> -->
+                <a class="menu_link" href="#graphic_design_content"><div class="menubar bar greenbar">
+
                 <p class="menu_header">
                     Graphic Design
                 </p>
@@ -182,7 +189,7 @@
         <div class="bar yellowbar"></div>
         <div class="bar greenbar"></div>
         <div class="bar bluebar"></div> -->
-        <div class="section purple" id="internships_title" style="background: none; color:white; filter:none; border: none">
+        <div class="section pink" id="internships_title" >
             <div class="figure_box">
                 <div class="figure">
                     <iframe class="youtube_iframe" src="https://www.youtube-nocookie.com/embed/7Z_YTZKU34s?si=mSvucS7eKbdMn46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen &vq=hd720 style="border: lightgray 2px solid;"></iframe>
@@ -210,7 +217,7 @@
             Skills:
         </h1>
         <section class="project_grid">
-            <div class="container yellow skill">
+            <div class="container blue skill">
                 <div class="project_text">
                     <h2 class="project_title">
                         Motion Design & Animation
@@ -218,7 +225,7 @@
                     <p class="project_desc">
                         A variety of animations designed to catch your eye, guide you through user experiences, and tell stories.
                     </p>
-                    <button onClick="document.getElementById('mograph_content').scrollIntoView({behavior:'smooth'});" class="yellow-button">
+                    <button onClick="document.getElementById('mograph_content').scrollIntoView({behavior:'smooth'});" class="blue-button">
                         View Motion Portfolio &#x2193;
                     </button>
                 </div>
@@ -250,7 +257,7 @@
                     <a onClick="document.getElementById('graphic_design_content').scrollIntoView({behavior:'smooth'});"><img class="project_image" src="./images/graphic_design/greenhouse/greenhouse-leafhands.png" alt="Iterative App Design"></a>
                 </div>
             </div>
-            <div class="container blue skill">
+            <div class="container yellow skill">
                 <div class="project_text">
                     <h2 class="project_title">
                         <!-- 3D Animation & Assets -->
@@ -261,12 +268,12 @@
                         <!-- Playful animations that center storytelling, created for enjoyment and satisfaction. -->
                         This skill is critical for any creative project, big or small. I have plenty of experience with making visual plans, which make collaboration with team members even easier.
                     </p>
-                    <button onClick="document.getElementById('process_content').scrollIntoView({behavior:'smooth'});" class="blue-button">
+                    <button onClick="document.getElementById('process_content').scrollIntoView({behavior:'smooth'});" class="yellow-button">
                         View Process Work &#x2193;
                     </button>
                 </div>
                 <div class="project_cover">
-                    <a onClick="document.getElementById('process_content').scrollIntoView({behavior:'smooth'});"><img class="project_image" src="./images/animation-3d/tigertruck-3d.gif" alt="Looping gif with colorful animation"></a>
+                    <a onClick="document.getElementById('process_content').scrollIntoView({behavior:'smooth'});"><img class="project_image" src="./images/AOFund/storyboards/CS_1.png" alt="Looping gif with colorful animation"></a>
                 </div>
             </div>
             
@@ -277,11 +284,11 @@
         <section id="home_content"></section>
 
 
-        
+        <br>
         <footer>
             Copyright Izzy Hettmansperger 2024
         </footer>
-        
+        <br>
     </main>
     
     </body>
