@@ -111,6 +111,9 @@ footer {
     justify-content: center;
 
 }
+.skill {
+    margin: 0;
+}
 
 .yellow {
     border: 0.2rem gold solid;
@@ -257,6 +260,7 @@ button.pink-button {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     opacity: 0.5;
+    color:rgba(21, 4, 51,0.8)
 }
 
 /* .home_popup {

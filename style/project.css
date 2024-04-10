@@ -132,6 +132,8 @@ nav {
 
 }
 
+
+
 .pink h2 {
     color: rgb(210, 111, 126);
 }
@@ -499,13 +501,38 @@ p.subtitle {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.icon_label {
+    /* padding:0; */
+}
+
+.small_arrow {
+    width: 2rem;
+    transform: translate(0, -1rem);
 }
 
 .program_icon {
     /* height: 1rem; */
     height: 4rem;
+}
+
+.icon_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    /* position: relative; */
+}
+
+.icon_box p {
+    
 }
 #sunnie_emotes_5 {
     width: 90%;
@@ -545,6 +572,9 @@ p.subtitle {
     object-fit: contain;
     object-position: center;
 }
+.modal_sec {
+    width: 80%;
+  }
 /* #sunnie_halves_section {
     height: 300px;
     position: relative;
@@ -677,6 +707,9 @@ p.subtitle {
         /* height: 1rem; */
         height: 2rem;
     }
+    .small_arrow {
+        height: 1rem;
+    }
  }
 @media (min-width: 768px) and (max-width: 1200px) { 
     
@@ -734,6 +767,7 @@ p.subtitle {
     .icon_chain {
         margin:auto;
     }
+    
 
 }
 @media (min-width: 1001px) and (max-width: 1199px) {  }

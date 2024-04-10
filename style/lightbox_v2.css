@@ -183,10 +183,17 @@
   }
 
   .modal_iframe {
-    width:1280px;
+    width:80%;
     height: 720px;
     max-width: 100%;
     max-height: calc(100vw * 3 / 4);
+    margin:auto;
+    
+  }
+
+  .modal_iframe_box {
+    width: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
   }
 
   #modal_header {
@@ -202,6 +209,7 @@
     color: white;
     font-size: 2rem;
     width: 60%;
+    margin:auto;
   }
 
   .modal_desc_text {
@@ -209,11 +217,23 @@
     font-size: 1.5rem;
 
   }
+  .modal_sec {
+    margin-top:1rem;
+  }
 
 @media (max-width: 815px) {
   .mySlides h3 {
 
 
+    width: 90%;
+  }
+  .modal_iframe {
+    
+    max-width: 80%;
+
+  }
+
+  .modal_sec {
     width: 90%;
   }
 
@@ -226,6 +246,17 @@
 
     width: 70%;
   }
+  .modal_iframe {
+    max-width: 90%;
+
+  }
+  .modal_sec {
+    width: 100%;
+  }
+  .modal_sec {
+    width: 90%;
+  }
+  
 }
 
 

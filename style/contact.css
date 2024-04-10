@@ -26,31 +26,28 @@
     opacity: 100%;
     filter: drop-shadow(rgba(255, 255, 255, 100) 0 0 5px);
 }
-#about_page {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content:left;
-    align-items: center;
+.about_page {
+    width: 100%;
     display: grid;
     grid-template-columns: 30% 70%;
 }
-#about_image {
+.about_image {
     width: 400px;
     margin:auto;    
 }
-#about_image_box {
+.about_image_box {
     background-image: url("images\about_image.jpg");
     background-size: cover;
 }
 
-#about_bio {
+.about_bio {
     font-size: 1.5rem;
     margin:1rem;
+    width: 100%;
 }
 
 @media (max-width: 767px) {
-    #about_page {
+    .about_page {
         width: 90%;
         
         display: grid;
@@ -66,7 +63,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) { 
-    #about_page {
+    .about_page {
         width: 90%;
         
         display: grid;

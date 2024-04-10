@@ -179,13 +179,13 @@ function checkCategory(n) {
     curr_category = "process";
   }
   else if (classList.includes("AOF")) {
-    modalHeader.innerHTML = "AOF Internship"
+    modalHeader.innerHTML = "AOF"
     
     modalHeader.style.color = "#d18af4";
     curr_category = "AOF";
   }
   else if (classList.includes("flourish")) {
-    modalHeader.innerHTML = "Flourish Internship"
+    modalHeader.innerHTML = "Flourish"
     
     modalHeader.style.color = "#d18af4";
     curr_category = "flourish";
