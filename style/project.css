@@ -420,6 +420,9 @@ p.subtitle {
     flex-direction: row;
     margin: auto;
 }
+.internship {
+    gap: 1rem;
+}
 .project_header {
 
     padding: 3rem;
