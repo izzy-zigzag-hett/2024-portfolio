@@ -383,7 +383,7 @@ button.pink-button {
 
     .project_grid {
         grid-template-columns: 90vw;
-        
+        margin-left:0;
     }
 
  }
@@ -391,6 +391,7 @@ button.pink-button {
 
     .project_grid {
         grid-template-columns: 45vw 45vw;
+        margin-left:0;
     }
 
 

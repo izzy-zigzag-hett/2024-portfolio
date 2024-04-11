@@ -106,7 +106,7 @@ nav {
     display: flex;
     flex-direction: column;
     min-height: 250px;
-    
+    width: 100vw;
 }
 
 .page_title {
@@ -590,6 +590,9 @@ p.subtitle {
   .project_desc {
     margin-top:0;
   }
+  #internship22 {
+    min-width: 332.1px;
+  }
 /* #sunnie_halves_section {
     height: 300px;
     position: relative;
@@ -615,7 +618,7 @@ p.subtitle {
     .project_grid{
         flex-direction: column;
         position: relative;
-        left:-1rem;
+        /* left:-1rem; */
     }
     .subtitle {
         font-size: 1rem;
@@ -737,6 +740,12 @@ p.subtitle {
         display: block;
         
     }
+    .internship {
+        transform:translate(-1rem, 0);
+    }
+    #internship22 {
+        min-width: 0;
+      }
  }
 @media (min-width: 768px) and (max-width: 1000px) { 
     
@@ -752,7 +761,7 @@ p.subtitle {
         width: 80%;
         flex-direction: column;
         position: relative;
-        left: -0.5rem;
+        
     }
     .subtitle {
         font-size: 1.2rem;
@@ -807,7 +816,7 @@ p.subtitle {
     .project_grid{
         width: 95%;
         position: relative;
-        left: -0.5rem;
+        /* left: -0.5rem; */
     }
   }
 @media (min-width: 1200px) {  }
