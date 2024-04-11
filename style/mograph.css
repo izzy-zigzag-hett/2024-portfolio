@@ -1,9 +1,9 @@
-
+/* 
 .figure_image_box {
     display: flex;
     flex-direction: row;
     width:40%;
-}
+} */
 
 @media (max-width: 767px) {
 

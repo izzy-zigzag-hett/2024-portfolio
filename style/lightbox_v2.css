@@ -49,6 +49,9 @@
     
   }
   
+
+
+  
   /* Modal Content */
   .modal-content {
     position: relative;
@@ -93,12 +96,15 @@
 
   .mySlides img {
     display: flex;
-    max-height: 95vh;
-    max-width: 90%;
+    /* height: 95vh;
+    width: 80vw; */
 
   }
 
-
+  .hr {
+    width: 100%;
+    margin: auto;
+  }
   
   /* Next & previous buttons */
   .prev,
@@ -220,6 +226,26 @@
   .modal_sec {
     margin-top:1rem;
   }
+  .canvas {
+    max-height: 95vh;
+    height: 95vh;
+    margin:auto;
+  }
+  .canvas_text {
+    margin-top:0 !important;
+    padding-top: 0 !important;
+  }
+  .bh_package {
+    max-width: 100% !important;
+    min-height: auto;
+  }
+  .addit_images {
+    width: 80%;
+  }
+  .GD_image {
+    max-height: 95vh;
+  }
+
 
 @media (max-width: 815px) {
   .mySlides h3 {
@@ -236,10 +262,12 @@
   .modal_sec {
     width: 90%;
   }
+  
+
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 1001px) { 
 
   .mySlides h3 {
 
@@ -256,6 +284,25 @@
   .modal_sec {
     width: 90%;
   }
+  /* .mySlides p.left_text {
+    text-align: left;
+    align-self: center;
+    min-width: 500px;
+    width: auto;
+  }
+  .canvas {
+    width: 500px;
+    height: calc(500px * 16 / 9);
+    
+  }
+  .canvas_and_desc {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    width: min-content;
+    margin: auto;
+    grid-gap: 1rem;
+  } */
+
   
 }
 

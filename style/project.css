@@ -418,10 +418,16 @@ p.subtitle {
     width: 80%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin: auto;
 }
-.internship {
-    gap: 1rem;
+/* .internship {
+    gap: 0rem;
+    flex-direction: column-reverse;
+} */
+.project_image {
+    margin:auto;
 }
 .project_header {
 
@@ -460,6 +466,9 @@ p.subtitle {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 30% 70%;
+}
+.spc_logo {
+    width: 100%;
 }
 .bh_package_section {
     width: 90%;
@@ -577,6 +586,9 @@ p.subtitle {
 }
 .modal_sec {
     width: 80%;
+  }
+  .project_desc {
+    margin-top:0;
   }
 /* #sunnie_halves_section {
     height: 300px;
@@ -713,8 +725,20 @@ p.subtitle {
     .small_arrow {
         height: 1rem;
     }
+    /* .internship {
+        gap: 0rem;
+        flex-direction: column-reverse;
+    } */
+    #spc_logo_section {
+        display: flex;
+        flex-direction: column;
+    }
+    #spc_logo_context {
+        display: block;
+        
+    }
  }
-@media (min-width: 768px) and (max-width: 1200px) { 
+@media (min-width: 768px) and (max-width: 1000px) { 
     
     #logo_wiggley {
         width: 90%;
@@ -725,9 +749,10 @@ p.subtitle {
         justify-content: space-around;
     }
     .project_grid{
+        width: 80%;
         flex-direction: column;
         position: relative;
-        left:-1rem;
+        left: -0.5rem;
     }
     .subtitle {
         font-size: 1.2rem;
@@ -760,6 +785,11 @@ p.subtitle {
     #bh_storyboards {
         flex-direction: column;
     }
+    
+    /* .internship {
+        gap: 1rem;
+        flex-direction: row;
+    } */
     .header_bg {
        
         top:-100px;
@@ -773,5 +803,11 @@ p.subtitle {
     
 
 }
-@media (min-width: 1001px) and (max-width: 1199px) {  }
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .project_grid{
+        width: 95%;
+        position: relative;
+        left: -0.5rem;
+    }
+  }
 @media (min-width: 1200px) {  }

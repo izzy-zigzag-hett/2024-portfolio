@@ -81,7 +81,7 @@
 #name_gif {
     width: 80%;
     margin: auto;
-    margin-top: -8rem;
+    margin-top: -2rem;
     /* margin-top: 0; */
     pointer-events: none;
 }
@@ -248,35 +248,45 @@ html {
         grid-template-columns: 100%;
         margin: 0;
     }
+    
 
  }
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 1000px) { 
 
     /* .project_grid {
 
         grid-template-columns: 90%;
     } */
     #name_gif {
-        width: 90%;
+        width: 95%;
         margin: auto;
         margin-top: 0;
     }
     .skill {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto 15rem;
         grid-gap: 2rem;
     }
-    .project_text {
+    .project_cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .project_text {
         text-align: right;
         display: flex;
         flex-direction: column;
         align-items: right;
         justify-content: center;
-    }
+    } */
+    /* .section_button {
+        width: fit-content;
+        margin-left: auto;
+    } */
 
 
 }
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: 1001px) and (max-width: 1199px) { 
 
  }
 @media (min-width: 1200px) { 
